@@ -8,6 +8,9 @@
             background-color: #b3e0ff;
             font-family: Lato, sans-serif;
         }
+        .header{
+            background-image: linear-gradient(#007acc,#b3e0ff);
+        }
         .box{
             background-color: #e6f5ff;
             border-radius: 6px;
@@ -24,8 +27,6 @@
             margin-bottom: 20px;
             margin: auto;
             width: 75%;
-            /* margin-left: 100px;
-            margin-right: 100px; */
         }
         .menu a{
             display: inline-block;
@@ -43,10 +44,10 @@
             background-color:#ccebff;
             color: black;
         }
-        .clearfix{
+        .section{
             overflow: auto;
         }
-        .clearfix a{
+        .section a{
             display: inline-block;
             display: -moz-inline-box;
             zoom: 1;
@@ -61,7 +62,7 @@
             margin-top: 10px;
             margin-bottom: 10px;
         }
-        .clearfix a:hover{
+        .section a:hover{
             background-color: #99d6ff;
             color: black;
         }
@@ -74,7 +75,9 @@
     </style>
 </head>
 <body>
-    <h1>Anna Schmult</h1>
+    <div class=header>
+        <h1>Anna Schmult</h1>
+    </div>
     <div class=menu>
         <a href="#about">About Me</a>
         <a href="#education">Education</a>
@@ -88,7 +91,7 @@
     </div>
     <div class=box>
         <h2><a id="education">Education</a></h2>
-        <div class=clearfix>
+        <div class=section>
             <img src="pics/Villanova-Seal.png" alt="The Villanova seal" style="width:250px; height:250px; float:left; margin-right: 20px; margin-bottom: 10px;">
             <h3>Villanova University</h3>
             <h4>Villanova, PA</h4>
@@ -98,7 +101,7 @@
             <a href="https://www1.villanova.edu/university/business.html" target="_blank">About Villanova School of Business</a>
         </div>
         <br>
-        <div class=clearfix>
+        <div class=section>
             <img src="pics/PHS-Logo.png" alt="The Princeton High School logo" style="width:300px; float:right; margin-bottom:10px; margin-left:20px;">
             <h3>Princeton High School</h3>
             <h4>Princeton, NJ</h4>
@@ -109,7 +112,7 @@
     </div>
     <div class=box>
         <h2><a id="experience">Experience</a></h2>
-        <div class=clearfix>
+        <div class=section>
             <img src="pics/BetterTrader-Logo.png" alt="The Better Trader logo" style="width:200px; float:left; margin-right:20px; margin-bottom: 10px">
             <h3>BetterTrader</h3>
             <p>During the summer of 2019, I worked at BetterTrader as a Research and Marketing Intern. When I started at BetterTrader, I noticed that blog content and articles needed improving on, both content-wise and gramatically. Additionally, social media was being underutilized.</p>
@@ -119,7 +122,7 @@
             <a href="https://jinternship.com/" target="_blank" style="margin-left:10px;">About jInternship</a>
         </div>
         <br>
-        <div class=clearfix>
+        <div class=section>
             <img src="pics/VUTC-Logo.png" alt="The logo for Villanova University Tech Crew" style="width:250px; float:right; margin-right:20px; margin-left:20px;">
             <h3>Villanova University Tech Crew</h3>
             <p>Tech Crew is Villanova's student run event production business. We provide audio, lighting, and video support for events around campus, from guest speakers to large-scale concerts. In 2018, we had reveune of over $60,000, and worked 153 events.</p>
@@ -136,10 +139,10 @@
     </div>
     <div class=box>
         <h2><a id="contact">Contact Me</a></h2>
-            <div class=clearfix>
-                <img src="pics/LinkedIn-Logo.png" href="https://www.linkedin.com/in/anna-schmult-876971184/" style="width:100px;">
-                <a href="mailto:aschmult@villanova.edu" target="_top" style="margin-right:10px;">Send me an email</a>
-                <a href="pics/AnnaSchmultResume.pdf" target="_blank" style="margin-left:10px;">Download Resume</a>
-            </div>
+        <div class=section>
+            <a href="https://www.linkedin.com/in/anna-schmult-876971184/"><img src="pics/LinkedIn-Logo.png" style="width:100px;"></a>
+            <a href="mailto:aschmult@villanova.edu" target="_top" style="margin-right:10px;">Send me an email</a>
+            <a href="pics/AnnaSchmultResume.pdf" target="_blank" style="margin-left:10px;">Download Resume</a>
+        </div>
     </div>
 </body>
