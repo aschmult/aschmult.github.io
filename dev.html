@@ -43,6 +43,7 @@
             padding-right: 20px;
             margin-top: 40px; /* this will have to get changed! */
             margin-bottom: 40px;
+            margin: 40px;
             box-shadow:0 0 15px #8cb3d9;
         }
         /* navigation menu, this will probably get changed to bootstrap stuff later */
@@ -139,7 +140,7 @@
             <p>I'm using this page to play with integrating bootstrap into my website. Unless you're my buddy Steve or Andrew, or maybe my mother, you're looking for my <a href="https://aschmult.github.io">main page</a>. Thanks!</p>
         </div>
     </div>
-    <div class="container"> <!-- Education starts-->
+    <div class="container-fluid"> <!-- Education starts-->
         <div class="box" id="education">
             <h2>Education</h2>
             <div class="row"> <!-- Villanova section-->
@@ -169,7 +170,7 @@
             </div>
         </div>
     </div> <!-- Education ends -->
-    <div class="container"> <!-- Exoerience starts -->
+    <div class="container-fluid"> <!-- Exoerience starts -->
         <div class="box" id="experience">
             <h2>Experience</h2>
             <div class="row"> <!-- BetterTrader starts -->
@@ -198,6 +199,12 @@
                 </div>
             </div> <!-- VUTC ends -->
         </div>
-    </div> <!-- Exoerience ends -->
+    </div> <!-- Experience ends -->
 </body>
 </html>
+
+<!--
+Ideas and notes:
+    -Make containers fluid containers, then add margins which are specified not to be there on small screens
+
+-->
