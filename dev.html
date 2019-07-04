@@ -23,13 +23,18 @@
         }
         /* the gradient is just the snazzy image, doesn't have anything to do with the positioning of other things */
         .gradient{
-            background-image: linear-gradient(#006bb3,#b3e0ff);
+            background-image: linear-gradient(#006bb3,#e6f5ff);
             position: absolute;
             z-index: -1;
             left:0;
             right:0;
             top:0;
             height:160px;
+        }
+        @media only screen and (min-width: 768px){
+            .gradient{
+                background-image: linear-gradient(#006bb3,#b3e0ff);
+            }
         }
         /* the header has the text and the positioning of other things */
         .header{
@@ -116,12 +121,18 @@
         }
         /* only for my name, so fancy */
         h1{
-            padding-left:40px;
-            padding-top:0px;
+            text-align: center;
             font-size:50px;
             letter-spacing:.15em;
             color: #0056A3;
             text-shadow:0 0 5px white;
+        }
+        @media only screen and (min-width: 768px){
+            h1{
+                padding-left: 40px;
+                padding-top: 0px;
+                text-align: left;
+            }
         }
         h2{
             margin-bottom:20px;
@@ -148,7 +159,9 @@
 </head>
 <body>
     <div class="container-fluid gradient"></div>
-    <div class="container-fluid header"></div>
+    <div class="container-fluid header">
+        <h1>Anna Schmult</h1>
+    </div>
     <div class="container-fluid">
         <div class="box">
             <h2>This probably isn't the page you're looking for.</h2>
