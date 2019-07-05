@@ -220,6 +220,16 @@ About the widths:
         margin-top: 0px;
     }
     /* p is up at the top in case you're looking */
+
+    /* Bottom stuff */
+    .contact{
+        display: inline-block;
+        display: -moz-inline-box;
+    }
+    .contact a{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
     .footer{
         text-align:center;
         font-style:italic;
@@ -248,16 +258,18 @@ About the widths:
         </div></div>
     </div></div> <!-- end header -->
 
-    <div class="container-fluid"> <div class="box">
-        <h2>This probably isn't the page you're looking for.</h2>
-        <p>I'm using this page to play with integrating bootstrap into my website. Unless you're my buddy Steve or Andrew, or maybe my mother, you're looking for my <a href="https://aschmult.github.io">main page</a>. Thanks!</p>
-    </div> </div>
+    <div class="container-fluid"> <div class="box"> <!-- start about me -->
+        <h2>Welcome!</h2>
+        <p>This might not be the page you're looking for. I'm using it to play aroun with integrating bootstrap into my website. In the meantime, check out my current <a href="https://aschmult.github.io">main page</a>. Thanks!</p>
+        <h2>About Me</h2>
+        <p>I am a student at the Villanova School of Business, class of 2022, where my interests include finance, math, and computer science. Outside of class, I enjoy playing ice hockey, and I am a member of the Executive Board of Villanova University Tech Crew. Please take a look at the rest of my site to learn more about me, download my resume, connect with me on LinkedIn, or reach out by email.</p>
+    </div></div>
 
-    <div class="container-fluid"> <div class="box">
-        <h2>This is a test.</h2>
-        <p>I'm using this page to play with integrating bootstrap into my website. Unless you're my buddy Steve or Andrew, or maybe my mother, you're looking for my <a href="https://aschmult.github.io">main page</a>. Thanks!</p>
-        <p>I'm using this page to play with integrating bootstrap into my website. Unless you're my buddy Steve or Andrew, or maybe my mother, you're looking for my <a href="https://aschmult.github.io">main page</a>. Thanks!I'm using this page to play with integrating bootstrap into my website. Unless you're my buddy Steve or Andrew, or maybe my mother, you're looking for my <a href="https://aschmult.github.io">main page</a>. Thanks!</p>
-    </div> </div>
+    <div class="container"><div class="contact"> <!-- start the contact buttons -->
+        <a href="https://www.linkedin.com/in/anna-schmult-876971184/" target="_blank"><img src="pics/LinkedIn-Logo.png" style="height:40px;">
+        <a href="mailto:aschmult@villanova.edu" target="_top"><img src="pics/Email-Logo.png" style="height:40px;">
+        <a href="pics/AnnaSchmultResume.pdf" target="_blank" style="width:150px; background-color:#0056A3; color:white; text-align:center; text-decoration:none; padding-top:10px; padding-bottom:10px; border-radius:6px;">Download Resume</a>
+    </div></div> <!-- end the contact buttons -->
 
     <div class="container-fluid"><div class="footer"><!-- start footer -->
         <div class="copyright">
@@ -270,5 +282,5 @@ About the widths:
 <!--
 Notes and Ideas:
     -The "container-fluid" div and the "box" or "footer" or whatever else div are separate beccause of spacing issues. When they're the
-        same div, the margin on the right side is weird. This doesn't apply to the "menu" div because it doesn't?????
+        same div, the margin on the right side is weird.
 -->
