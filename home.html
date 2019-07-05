@@ -48,6 +48,28 @@
             height:140px;
         }
     }
+    .menu{
+        /* chilling empty until I get the whole mobile menu figured out */ 
+    }
+    @media only screen and (min-width: 768px){
+        .menu{
+            width: 30%;
+            position:absolute;
+            right:10px;
+        }
+        .menu a{
+            display: inline-block;
+            display: -moz-inline-box;
+            zoom: 1;
+            width: 24.7%;
+            text-align: center;
+            color: black;
+            text-decoration: none;
+            margin-right: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
     /* boxes no longer are visable but I'm still using them for separation  (I'm not sure this is nessecary) */
     .box{
         margin-top: 20px;
@@ -90,7 +112,7 @@
         text-align: center;
         padding-top: 20px;
         color: #003666;
-        text-shadow: 0 0 2px white;
+        text-shadow: 0 0 2px #8cb3d9;
         font-weight: bold;
     }
     @media only screen and (min-width: 768px){
@@ -135,18 +157,20 @@
     <div class="container-fluid header">
         <h1>Anna Schmult</h1>
     </div>
-    <div class="container-fluid">
-        <div class="box">
-            <h2>This probably isn't the page you're looking for.</h2>
-            <p>I'm using this page to play with integrating bootstrap into my website. Unless you're my buddy Steve or Andrew, or maybe my mother, you're looking for my <a href="https://aschmult.github.io">main page</a>. Thanks!</p>
+    <div class="container-fluid menu">
+        <a href="#about">Home</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#hobbies">My Hobbies</a>
         </div>
+    <div class="container-fluid box">
+        <h2>This probably isn't the page you're looking for.</h2>
+        <p>I'm using this page to play with integrating bootstrap into my website. Unless you're my buddy Steve or Andrew, or maybe my mother, you're looking for my <a href="https://aschmult.github.io">main page</a>. Thanks!</p>
     </div>
-    <div class="container-fluid">
-        <div class="box">
-            <h2>This is a test.</h2>
-            <p>I'm using this page to play with integrating bootstrap into my website. Unless you're my buddy Steve or Andrew, or maybe my mother, you're looking for my <a href="https://aschmult.github.io">main page</a>. Thanks!</p>
-            <p>I'm using this page to play with integrating bootstrap into my website. Unless you're my buddy Steve or Andrew, or maybe my mother, you're looking for my <a href="https://aschmult.github.io">main page</a>. Thanks!I'm using this page to play with integrating bootstrap into my website. Unless you're my buddy Steve or Andrew, or maybe my mother, you're looking for my <a href="https://aschmult.github.io">main page</a>. Thanks!</p>
-        </div>
+    <div class="container-fluid box">
+        <h2>This is a test.</h2>
+        <p>I'm using this page to play with integrating bootstrap into my website. Unless you're my buddy Steve or Andrew, or maybe my mother, you're looking for my <a href="https://aschmult.github.io">main page</a>. Thanks!</p>
+        <p>I'm using this page to play with integrating bootstrap into my website. Unless you're my buddy Steve or Andrew, or maybe my mother, you're looking for my <a href="https://aschmult.github.io">main page</a>. Thanks!I'm using this page to play with integrating bootstrap into my website. Unless you're my buddy Steve or Andrew, or maybe my mother, you're looking for my <a href="https://aschmult.github.io">main page</a>. Thanks!</p>
     </div>
     <div class="container-fluid copyright">
         <p>© 2019 Anna Schmult. All rights reserved.</p>
