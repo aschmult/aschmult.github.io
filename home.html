@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<meta charset="utf-8">
+<title>Anna Schmult</title>
+<style>
+    html, body{
+        overflow-x: hidden;
+    }
+    body{
+        font-family: Roboto, Lato, sans-serif;
+    }
+    @media only screen and (min-width: 768px){
+        body{
+            font-family: Lato, sans-serif;
+        }
+    }
+    /* the gradient is just the snazzy image, doesn't have anything to do with the positioning of other things */
+    .gradient{
+        background-image: linear-gradient(#006bb3,#b3e0ff);
+        position: absolute;
+        z-index: -1;
+        left:0;
+        right:0;
+        top:0;
+        height:260px;
+    }
+    @media only screen and (min-width: 768px){
+        .gradient{
+            height: 160px;
+        }
+    }
+    /* the header has the text and the positioning of other things */
+    .header{
+        position: relative;
+        right: 0px;
+        left: 0px;
+        top: 0px;
+        padding-bottom:20px;
+        height:260px;
+    }
+    @media only screen and (min-width: 768px){
+        .header{
+            height:140px;
+        }
+    }
+    .row a{
+        display: inline-block;
+        display: -moz-inline-box;
+        zoom: 1;
+        width: 275px;
+        text-align: center;
+        color: black;
+        background-color: #b3e0ff;
+        text-decoration: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 6px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .row a:hover{
+        background-color: #99d6ff;
+        color: black;
+    }
+    /* headings aren't bold by default b/c bootstrap formatting is weird */
+    h1,h2,h3,h4,h5,h6{
+        font-weight: bold;
+    }
+    /* only for my name, so fancy */
+    h1{
+        text-align: center;
+        padding-top: 20px;
+        color: #003666;
+        text-shadow: 0 0 2px white;
+    }
+    @media only screen and (min-width: 768px){
+        h1{
+            padding-left: 30px;
+            padding-top: 30px;
+            text-align: left;
+            letter-spacing:.15em;
+            text-shadow:0 0 5px white;
+            font-size: 50px;
+        }
+    }
+    h2{
+        margin-bottom:20px;
+    }
+    /* h4 and h5 are subheadings for sections, the margin is so that they're not spaced out */
+    h4{
+        margin-bottom: 0px;
+    }
+    h5{
+        margin-top: 0px;
+    }
+    /* bootstrap has weird spacing by default */
+    p{
+        line-height: 1.1;
+    }
+    .copyright{
+        text-align:right;
+        font-style:italic;
+        font-size:10px;
+        color:grey;
+        margin-bottom:12px;
+        margin-right:12px;
+    }
+</style>
+</head>
+<body>
+    <div class="container-fluid gradient"></div>
+    <div class="container-fluid header">
+        <h1>Anna Schmult</h1>
+    </div>
+    <div class="container-fluid">
+        <div class="box">
+            <h2>This probably isn't the page you're looking for.</h2>
+            <p>I'm using this page to play with integrating bootstrap into my website. Unless you're my buddy Steve or Andrew, or maybe my mother, you're looking for my <a href="https://aschmult.github.io">main page</a>. Thanks!</p>
+        </div>
+    </div>
+    <div class="container-fluid copyright">
+        <p>© 2019 Anna Schmult. All rights reserved.</p>
+    </div>
+</body>
