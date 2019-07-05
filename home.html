@@ -82,8 +82,12 @@ About the widths:
 
     /* MENU */
     .menu{
-        visibility: hidden;
-        /* hidden until I get the whole mobile menu figured out */ 
+        /* don't know why this is here but it is */ 
+    }
+    @media only screen and (max-width: 599px){
+        .menu{
+            visibility: hidden; /* until I get the mobile menu figured out */
+        }
     }
     @media only screen and (min-width: 600px) and (max-width: 1049px){
         .menu{
