@@ -7,6 +7,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 <meta charset="utf-8">
 <title>Anna Schmult</title>
+<!--
+About the widths:
+    Below 600 px is designed for phones.
+    Between 600 and 1050 px is for tablets or narrow browswers.
+    1050 px is the cutoff because that's where the 'Anna Schmult' title and the menu overlap.
+-->
+
 <style>
     html, body{
         overflow-x: hidden;
@@ -18,11 +25,6 @@
         body{
             font-family: Lato, sans-serif;
             letter-spacing: .07em;
-        }
-    }
-    @media only screen and (max-width: 1050px){
-        body{
-            /* there's nothing here */
         }
     }
     p{
@@ -41,7 +43,7 @@
     }
     @media only screen and (min-width: 600px){
         .gradient{
-            height: 260px;
+            height: 230px;
         }
     }
     @media only screen and (min-width: 1050px){
@@ -60,7 +62,7 @@
     }
     @media only screen and (min-width: 600px){
         .header{
-            height:260px;
+            height:230px;
         }
     }
     @media only screen and (min-width: 1050px){
@@ -75,8 +77,8 @@
         .menu{
             width: 530px;
             position:absolute;
-            top:100px;
-            left:30px;
+            top:130px;
+            left:10px;
             /* background-color:grey; */
         }
         .menu a{
@@ -104,6 +106,7 @@
             width: 530px;
             position:absolute;
             top:50px;
+            left:0;
             right:10px;
             /* background-color:grey; */
         }
