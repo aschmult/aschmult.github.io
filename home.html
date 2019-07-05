@@ -22,7 +22,7 @@
     }
     @media only screen and (max-width: 1050px){
         body{
-            background-color: black;
+            /* there's nothing here */
         }
     }
     p{
@@ -37,9 +37,14 @@
         left:0;
         right:0;
         top:0;
-        height:260px;
+        height:160px;
     }
     @media only screen and (min-width: 600px){
+        .gradient{
+            height: 260px;
+        }
+    }
+    @media only screen and (min-width: 1050px){
         .gradient{
             height: 160px;
         }
@@ -51,11 +56,16 @@
         left: 0px;
         top: 0px;
         padding-bottom:20px;
-        height:260px;
+        height:160px;
     }
     @media only screen and (min-width: 600px){
         .header{
-            height:140px;
+            height:260px;
+        }
+    }
+    @media only screen and (min-width: 1050px){
+        .header{
+            height:160px;
         }
     }
     .menu{
