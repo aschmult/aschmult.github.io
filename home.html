@@ -31,7 +31,8 @@ About the widths:
         line-height: 1.1;
         font-weight: 100;
     }
-    /* the gradient is just the snazzy image, doesn't have anything to do with the positioning of other things */
+
+    /* GRADIENT is just the snazzy image, doesn't have anything to do with the positioning of other things */
     .gradient{
         background-image: linear-gradient(#006bb3,#e6f5ff);
         position: absolute;
@@ -51,7 +52,8 @@ About the widths:
             height: 160px;
         }
     }
-    /* the header has the text and the positioning of other things */
+
+    /* HEADER has the text and the positioning of other things */
     .header{
         position: relative;
         right: 0px;
@@ -70,6 +72,8 @@ About the widths:
             height:160px;
         }
     }
+
+    /* MENU */
     .menu{
         /* chilling empty until I get the whole mobile menu figured out */ 
     }
@@ -106,7 +110,6 @@ About the widths:
             width: 530px;
             position:absolute;
             top:50px;
-            left:0;
             right:10px;
             /* background-color:grey; */
         }
@@ -130,7 +133,8 @@ About the widths:
             background-color: rgba(255, 255, 255, .2);
         }
     }
-    /* boxes no longer are visable but I'm still using them for separation  (I'm not sure this is nessecary but I'm doing it) */
+
+    /* BOX no longer are visable but I'm still using them for separation  (I'm not sure this is nessecary but I'm doing it) */
     .box{
         margin-top: 20px;
         margin-bottom: 20px;
@@ -144,7 +148,8 @@ About the widths:
             /* background-color:grey;*/
         }
     }
-    /* row refers to a section, row a refers to the links */
+
+    /* ROW refers to a section, row a refers to the links */
     .row a{
         display: inline-block;
         display: -moz-inline-box;
@@ -164,7 +169,8 @@ About the widths:
         background-color: #99d6ff;
         color: black;
     }
-    /* headings aren't bold by default b/c bootstrap formatting is weird */
+
+    /* HEADINGS aren't bold by default b/c bootstrap formatting is weird */
     h1,h2,h3,h4,h5,h6{
         font-weight: 400;
     }
@@ -206,7 +212,7 @@ About the widths:
         color:grey;
         margin-bottom:12px;
     }
-    @media only screen and (min-width: 768px){
+    @media only screen and (min-width: 600px){
         .copyright{
             text-align:right;
             margin-right:20px;
@@ -217,15 +223,15 @@ About the widths:
 <body>
     <div class="container-fluid gradient"></div> <!-- the gradient -->
 
-    <div class="container-fluid header"><!-- start header -->
+    <div class="container-fluid"><div class="header"><!-- start header -->
         <h1>Anna Schmult</h1>
-        <div class="container-fluid menu">
+        <div class="container-fluid"><div class="menu">
             <a href="#about">Home</a>
             <a href="#education">Education</a>
             <a href="#experience">Experience</a>
             <a href="#hobbies">My Hobbies</a>
-        </div>
-    </div> <!-- end header -->
+        </div></div>
+    </div></div> <!-- end header -->
 
     <div class="container-fluid"> <div class="box">
         <h2>This probably isn't the page you're looking for.</h2>
