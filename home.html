@@ -142,37 +142,46 @@
         line-height: 1.1;
         font-weight: 100;
     }
-    .copyright{
-        text-align:right;
+    .footer{
+        text-align:center;
         font-style:italic;
         font-size:10px;
         color:grey;
         margin-bottom:12px;
-        margin-right:12px;
+    }
+    @media only screen and (min-width: 768px){
+        .footer{
+            text-align:right;
+            margin-right:20px;
+        }
     }
 </style>
 </head>
 <body>
-    <div class="container-fluid gradient"></div>
-    <div class="container-fluid header">
+    <div class="container-fluid gradient"></div> <!-- the gradient -->
+
+    <div class="container-fluid header"><!-- start header -->
         <h1>Anna Schmult</h1>
-    </div>
-    <div class="container-fluid menu">
-        <a href="#about">Home</a>
-        <a href="#education">Education</a>
-        <a href="#experience">Experience</a>
-        <a href="#hobbies">My Hobbies</a>
+        <div class="container-fluid menu">
+            <a href="#about">Home</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#hobbies">My Hobbies</a>
         </div>
+    </div> <!-- end header -->
+
     <div class="container-fluid box">
         <h2>This probably isn't the page you're looking for.</h2>
         <p>I'm using this page to play with integrating bootstrap into my website. Unless you're my buddy Steve or Andrew, or maybe my mother, you're looking for my <a href="https://aschmult.github.io">main page</a>. Thanks!</p>
     </div>
+
     <div class="container-fluid box">
         <h2>This is a test.</h2>
         <p>I'm using this page to play with integrating bootstrap into my website. Unless you're my buddy Steve or Andrew, or maybe my mother, you're looking for my <a href="https://aschmult.github.io">main page</a>. Thanks!</p>
         <p>I'm using this page to play with integrating bootstrap into my website. Unless you're my buddy Steve or Andrew, or maybe my mother, you're looking for my <a href="https://aschmult.github.io">main page</a>. Thanks!I'm using this page to play with integrating bootstrap into my website. Unless you're my buddy Steve or Andrew, or maybe my mother, you're looking for my <a href="https://aschmult.github.io">main page</a>. Thanks!</p>
     </div>
-    <div class="container-fluid copyright">
+
+    <div class="container-fluid footer"> <!-- start footer -->
         <p>© 2019 Anna Schmult. All rights reserved.</p>
-    </div>
+    </div> <!-- end footer -->
 </body>
