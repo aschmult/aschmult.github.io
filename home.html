@@ -96,7 +96,7 @@ About the widths:
             left:0px;
             /* background-color:grey; */
         }
-        .menu a{
+        .menu a, .dropdown-button{
             display: inline-block;
             display: -moz-inline-box;
             zoom: 1;
@@ -114,7 +114,7 @@ About the widths:
             border-radius: 4px;
             /* background-color:white; */
         }
-        .menu a:hover{
+        .menu a:hover, .dropdown:hover .dropdown{
             background-color: rgba(255, 255, 255, .2);
         }
     }
@@ -125,7 +125,7 @@ About the widths:
             right:10px;
             /* background-color:grey; */
         }
-        .menu a{
+        .menu a, .dropdown-button{
             display: inline-block;
             display: -moz-inline-box;
             zoom: 1;
@@ -143,8 +143,51 @@ About the widths:
             border-radius: 4px;
             /* background-color:white; */
         }
-        .menu a:hover{
+        .menu a:hover, .dropdown:hover .dropdown{
             background-color: rgba(255, 255, 255, .2);
+        }
+    }
+
+    /* DROPDOWN (it's part of the menu, more of it is in the menu section */
+    .dropdown{
+        /*nothing here yet*/
+    }
+    @media only screen and (min-width: 600px){
+        .dropdown{
+            display: inline-block;
+            display: -moz-inline-box;
+        }
+    }
+    .dropdown-content{
+        /*nothing here yet*/
+    }
+    @media only screen and (min-width:600px){
+        .dropdown-content{
+            display:none;
+            position: absolute;
+            background-color:grey;
+            min-width:160px;
+            z-index:1;
+        }
+    }
+    .dropdown-content a{
+        /*nothing here yet*/
+    }
+    @media only screen and (min-width:600px){
+        .dropdown-content a{
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover{
+            background-color:white;
+        }
+    }
+    @media only screen and (min-width:600px){
+        .dropdown:hover .dropdown-content{
+            display:block;
         }
     }
 
@@ -257,7 +300,14 @@ About the widths:
         <h1>Anna Schmult</h1>
         <div class="container-fluid"><div class="menu">
             <a href="#about">Home</a>
-            <a href="#education">Education</a>
+            <span class="dropdown">
+                <a href="javascript:void(0)" class="dropdown-button">About Me</a>
+                <div class="dropdown-content">
+                    <a href="#education">Education</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#hobbies">Hobbies</a>
+                </div>
+            </span>
             <a href="#experience">Experience</a>
             <a href="#hobbies">Hobbies</a>
         </div></div>
