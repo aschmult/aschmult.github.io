@@ -165,7 +165,6 @@ About the widths:
         .dropdown-content{
             display:none;
             position: absolute;
-            background-color:grey;
             min-width:160px;
             z-index:1;
         }
@@ -182,7 +181,7 @@ About the widths:
             text-align: left;
         }
         .dropdown-content a:hover{
-            background-color:white;
+            background-color:grey;
         }
     }
     @media only screen and (min-width:600px){
@@ -296,41 +295,50 @@ About the widths:
 <body>
     <div class="container-fluid gradient"></div> <!-- the gradient -->
 
-    <div class="container-fluid"><div class="header"><!-- start header -->
+    <!-- start header -->
+    <div class="container-fluid"><div class="header">
         <h1>Anna Schmult</h1>
         <div class="container-fluid"><div class="menu">
             <a href="#about">Home</a>
-            <span class="dropdown">
+            <span class="dropdown"> <!-- start about me dropdown-->
                 <a href="javascript:void(0)" class="dropdown-button">About Me</a>
                 <div class="dropdown-content">
                     <a href="#education">Education</a>
                     <a href="#experience">Experience</a>
                     <a href="#hobbies">Hobbies</a>
+                    <a href="pics/AnnaSchmultResume.pdf" target="_blank">My Resume</a>
                 </div>
-            </span>
-            <a href="#experience">Experience</a>
-            <a href="#hobbies">Hobbies</a>
+            </span> <!-- end about me dropdown -->
+            <a href="mailto:aschmult@villanova.edu" target="_top"><img src="pics/Email-Logo.png" style="height:45px;">
+            <a href="https://www.linkedin.com/in/anna-schmult-876971184/" target="_blank"><img src="pics/LinkedIn-Logo.png" style="height:45px;">
         </div></div>
-    </div></div> <!-- end header -->
+    </div></div>
+<!-- end header -->
 
-    <div class="container-fluid"> <div class="box"> <!-- start about me -->
+<!-- start about me -->    
+    <div class="container-fluid"> <div class="box"> 
         <h2>Welcome!</h2>
-        <p>This might not be the page you're looking for. I'm using it to play aroun with integrating bootstrap into my website. In the meantime, check out my current <a href="https://aschmult.github.io">main page</a>. Thanks!</p>
+        <p>This might not be the page you're looking for. I'm using it to play around with integrating bootstrap into my website. In the meantime, check out my current <a href="https://aschmult.github.io">main page</a>. Thanks!</p>
         <h2>About Me</h2>
         <p>I am a student at the Villanova School of Business, class of 2022, where my interests include finance, math, and computer science. Outside of class, I enjoy playing ice hockey, and I am a member of the Executive Board of Villanova University Tech Crew. Please take a look at the rest of my site to learn more about me, download my resume, connect with me on LinkedIn, or reach out by email.</p>
     </div></div>
+<!-- end about me -->
 
-    <div class="container"><div class="contact"> <!-- start the contact buttons -->
+<!-- start the contact buttons -->
+<!--    <div class="container"><div class="contact"> 
         <a href="mailto:aschmult@villanova.edu" target="_top"><img src="pics/Email-Logo.png" style="height:45px;">
         <a href="https://www.linkedin.com/in/anna-schmult-876971184/" target="_blank"><img src="pics/LinkedIn-Logo.png" style="height:45px;">
         <a href="pics/AnnaSchmultResume.pdf" target="_blank" style="width:170px; background-color:#0056A3; color:white; text-align:center; text-decoration:none; padding-top:10px; padding-bottom:12px; padding-right:10px; padding-left:10px; border-radius:4px;">Download Resume</a>
-    </div></div> <!-- end the contact buttons -->
+    </div></div> -->
+<!-- end the contact buttons -->
 
-    <div class="container-fluid"><div class="footer"><!-- start footer -->
+<!-- start footer -->
+    <div class="container-fluid"><div class="footer">
         <div class="copyright">
             <p>© 2019 Anna Schmult. All rights reserved.</p>
         </div>
-    </div></div><!-- end footer -->
+    </div></div>
+<!-- end footer -->    
 </body>
 </html>
 
