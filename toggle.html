@@ -12,12 +12,12 @@
                 transform: translate(-50%,-50%);
             }
             .circle-mood{
-                width: 100px;
-                height: 100px;
+                width: 100%;
+                height: 100%;
                 border: 15px solid red;
                 box-sizing: border-box;
                 border-radius: 50%;
-                transition: opacity .5s;
+                transition: .5s;
                 cursor: pointer;
             }
             .clicked{
@@ -27,7 +27,7 @@
                 position: absolute;
                 height: 10px;
                 background: white;
-                transition: opacity .5s;
+                transition: .s;
                 opacity: 0;
             }
             .line-short{
@@ -49,18 +49,18 @@
                 opacity: 1;
             }            
         </style>
-    </head>
-    <body>
-        <h1>Playing with a toggle bar</h1>
-        <div class="circle">
-            <div class="circle-mood"></div>
-            <span class="line-short"></span>
-            <span class="line-long"></span>
-        </div>
         <script>
             $(".circle-mood").click(function () {
                 $(this).toggleClass("clicked");
             })
         </script>
+    </head>
+    <body>
+        <h1>Playing with a toggle button (it hasn't been working) </h1>
+        <div class="circle">
+            <div class="circle-mood"></div>
+            <span class="line-short"></span>
+            <span class="line-long"></span>
+        </div>
     </body>
 </html>
