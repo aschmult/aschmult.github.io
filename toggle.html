@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Toggle Button</title>
+        <style>
+            .circle{
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+            .circle-mood{
+                width: 100px;
+                height: 100px;
+                border: 15px solid red;
+                box-sizing: border-box;
+                border-radius: 50%;
+                transition: .5s;
+                cursor: pointer;
+            }
+            .clicked{
+                border: 50px solid green;
+            }
+            .line-short, .line-long{
+                position: absolute;
+                height: 10px;
+                background: white;
+                transition: .s;
+                opacity: 0;
+            }
+            .line-short{
+                width: 30px;
+                top: 55px;
+                left: 20px;
+                transform: rotate(45deg);
+            }
+            .line-long{
+                width: 50px;
+                top: 44px;
+                left: 35px;
+                transform: rotate(-45deg);
+            }
+            .clicked ~ .line-long{
+                opacity: 1;
+            }
+            .clicked ~ .line-short{
+                opacity: 1;
+            }            
+        </style>
+    </head>
+    <body>
+        <h1>Playing with a toggle bar</h1>
+        <div class="circle">
+            <div class="circle-mood"></div>
+            <span class="line-short"></span>
+            <span class="line-long"></span>
+        </div>
+        <script>
+            $(".circle-mood").click(function () {
+                $(this).toggleClass('clicked');
+            })
+    </body>
+</html>
