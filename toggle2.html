@@ -25,6 +25,7 @@
                 left: 50%;
                 transform: translate(-50%, -50%);
             }
+            /*short and long lines are the white ones on the green backgroud*/
             .shortLine, .longLine{
                 position: absolute;
                 height: 10px;
@@ -46,6 +47,23 @@
             .visable{
                 opacity: 1;
             }
+            /*red lines are the red ones*/
+            .redLine1, .redLine2{
+                position: absolute;
+                height: 10px;
+                width: 100px;
+                background: red;
+                opacity: 1;
+            }
+            .redLine1{
+                transform: rotate(45deg);
+            }
+            .redLine2{
+                transform: rotate(-45deg);
+            }
+            .invisable{
+                opacity: 0;
+            }
         </style>       
     </head>
 
@@ -63,6 +81,10 @@
                 element.classList.toggle("visable");
                 var element = document.getElementById("longLine");
                 element.classList.toggle("visable");
+                var element = document.getElementById("redLine1");
+                element.classList.toggle("invisable");
+                var element = document.getElementById("redLine2");
+                element.classList.toggle("invisable");
             }
         </script> 
     </body>
