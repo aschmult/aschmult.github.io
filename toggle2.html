@@ -7,7 +7,7 @@
                 height: 100px;
                 width: 100px;
                 border-radius: 50%;
-                background-color: red;
+                border: 15px solid red;
             }
             .clicked{
                 height: 100px;
@@ -22,10 +22,13 @@
         <h1>Playing with a toggle button</h1>
         <div class="notClicked" id="circle" onclick="colorChange()"></div>
         <script>
-            function colorChange() {
+            $(".notClicked").click(function(){
+                $("div").toggleClass(".clicked");
+            })
+            /*function colorChange() {
                 var element = document.getElementById("circle");
                 element.classList.toggle("clicked");
-            }
+            }*/
         </script> 
     </body>
 </html>
