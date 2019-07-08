@@ -30,15 +30,15 @@
             .bottomLine{
                 top: 110px;
             }
-            .menuToggle:hover .topLine{
+            .topLineClick{
                 width: 135px;
                 transform: rotate(45deg) translate(0px, 27px);
             }
-            .menuToggle:hover .bottomLine{
+            .bottomLineClick{
                 width: 135px;
                 transform: rotate(-45deg) translate(0px, -27px);
             }
-            .menuToggle:hover .middleLine{
+            .middleLineClick{
                 width: 0px;
             }
         </style>       
@@ -46,10 +46,20 @@
 
     <body>
         <h1>Making toggle buttons</h1>
-        <div class="menuToggle">
-            <div class="topLine"></div>
-            <div class="middleLine"></div>
-            <div class="bottomLine"></div>
+        <div class="menuToggle" id="menu" onclick="menuChange()">
+            <div class="topLine" id="topLine"></div>
+            <div class="middleLine" id="middleLine"></div>
+            <div class="bottomLine" id="bottomLine"></div>
         </div>
+        <script>
+            function menuChange() {
+                var element = document.getElementById("topLine");
+                element.classList.toggle("topLineClick");
+                var element = document.getElementById("middleLine");
+                element.classList.toggle("middleLineClick");
+                var element = document.getElementById("bottomLine");
+                element.classList.toggle("bottomLineClick");
+            }
+        </script>
     </body>
     </html>
