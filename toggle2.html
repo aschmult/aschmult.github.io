@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Toggle Button</title>
+        <style>
+            .circle{
+                height: 100px;
+                width: 100px;
+                border-radius: 50%;
+                background-color: red;
+            }
+            .clicked{
+                height: 100px;
+                width: 100px;
+                border-radius: 50%;
+                background-color: green;
+            }
+        </style>
+        <script>
+            $(".circle").click(function () {
+                $(this).toggleClass("clicked");
+            })
+        </script>        
+    </head>
+
+    <body>
+        <h1>Playing with a toggle button</h1>
+        <div class="circle"></div>
+    </body>
+</html>
