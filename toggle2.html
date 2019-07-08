@@ -8,18 +8,20 @@
                 width: 100px;
                 border-radius: 50%;
                 border: 15px solid red;
-                position: absolute;
+                position:absolute;
                 top: 50%;
                 right: 50%;
+                transform: translate(-50%, -50%);
             }
             .clicked{
                 height: 100px;
                 width: 100px;
                 border-radius: 50%;
                 background-color: green;
-                position: absolute;
+                position:absolute;
                 top: 50%;
                 right: 50%;
+                transform: translate(-50%, -50%);
             }
         </style>       
     </head>
@@ -30,8 +32,8 @@
         <script>
             })
             function colorChange() {
-                var cirlce = document.getElementById("circle");
-                circle.classList.toggle("clicked");
+                var element = document.getElementById("circle");
+                element.classList.toggle("clicked");
             }
         </script> 
     </body>
