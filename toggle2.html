@@ -7,6 +7,7 @@
                 height: 100px;
                 width: 100px;
                 border-radius: 50%;
+                box-sizing: border-box;
                 border: 15px solid red;
                 position:absolute;
                 top: 50%;
@@ -24,16 +25,44 @@
                 left: 50%;
                 transform: translate(-50%, -50%);
             }
+            .shortLine, .longLine{
+                position: absolute;
+                height: 10px;
+                background: white;
+                opacity: 0;
+            }
+            .shortLine{
+                width: 30px;
+                top: 55px;
+                left: 20px;
+                transform: rotate(45deg);
+            }
+            .longLine{
+                width: 50px;
+                top: 44px;
+                left: 35px;
+                transform: rotate(-45deg);
+            }
+            .visable{
+                opacity: 1;
+            }
         </style>       
     </head>
 
     <body>
-        <h1>Playing with a toggle button</h1>
-        <div class="notClicked" id="circle" onclick="colorChange()"></div>
+        <h1>Making a toggle button!!</h1>
+        <div class="notClicked" id="circle" onclick="colorChange()">
+            <span class="shortLine" id="shortLine"></span>
+            <span class="longLine" id="longLine"></span>
+        </div>
         <script>
             function colorChange() {
                 var element = document.getElementById("circle");
                 element.classList.toggle("clicked");
+                var element = document.getElementById("shortLine");
+                element.classList.toggle("visable");
+                var element = document.getElementById("longLine");
+                element.classList.toggle("visable");
             }
         </script> 
     </body>
