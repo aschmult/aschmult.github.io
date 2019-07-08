@@ -8,12 +8,18 @@
                 width: 100px;
                 border-radius: 50%;
                 border: 15px solid red;
+                position: absolute;
+                top: 50%;
+                right: 50%;
             }
             .clicked{
                 height: 100px;
                 width: 100px;
                 border-radius: 50%;
                 background-color: green;
+                position: absolute;
+                top: 50%;
+                right: 50%;
             }
         </style>       
     </head>
@@ -22,13 +28,11 @@
         <h1>Playing with a toggle button</h1>
         <div class="notClicked" id="circle" onclick="colorChange()"></div>
         <script>
-            $(".notClicked").click(function(){
-                $(this).toggleClass(".clicked");
             })
-            /*function colorChange() {
-                var element = document.getElementById("circle");
-                element.classList.toggle("clicked");
-            }*/
+            function colorChange() {
+                var cirlce = document.getElementById("circle");
+                circle.classList.toggle("clicked");
+            }
         </script> 
     </body>
 </html>
