@@ -14,21 +14,23 @@
             }
             .topLine, .middleLine, .bottomLine{
                 height: 5px;
-                width: 100px;
                 background-color: black;
                 position: relative;
                 top: 82.5px;
                 left: 100px;
-                transition: transform .3s;
+                transition: width .3s, transform .3s;
             }
             .topLine{
                 top: 80px;
+                width: 100px;
             }
             .middleLine{
                 top: 95px;
+                width: 80px;
             }
             .bottomLine{
                 top: 110px;
+                width: 100px;
             }
             .topLineClick{
                 transform: rotate(45deg) translate(0px, 27px);
