@@ -23,7 +23,7 @@
         <div class="notClicked" id="circle" onclick="colorChange()"></div>
         <script>
             $(".notClicked").click(function(){
-                $("div").toggleClass(".clicked");
+                $(this).toggleClass(".clicked");
             })
             /*function colorChange() {
                 var element = document.getElementById("circle");
