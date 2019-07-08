@@ -10,7 +10,6 @@
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-                background-color:cadetblue;
             }
             .topLine, .middleLine, .bottomLine{
                 height: 5px;
@@ -30,18 +29,18 @@
                 top: 60px;
             }
             .menuToggle:hover .topLine{
-                transform: rotate(45deg);
-                transform: translate(0, 10px);
+                transform: rotate(45deg) translate(0, 10px);
+                /*transform: translate(0, 10px);*/
             }
             .menuToggle:hover .bottomLine{
-                transform: rotate(-45deg);
-                transform: translate(0, -10px);
+                transform: rotate(-45deg) translate(0, -10px);
+                /*transform: translate(0, -10px);*/
             }
         </style>       
     </head>
 
     <body>
-        <h1>Making toggle buttons</h1>
+        <h1>Making toggle buttons!!</h1>
         <div class="menuToggle">
             <div class="topLine"></div>
             <div class="middleLine"></div>
