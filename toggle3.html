@@ -4,6 +4,8 @@
         <title>Toggle Button</title>
         <style>
             .menuToggle{
+                height: 200px;
+                width: 200px;
                 position: absolute;
                 top: 50%;
                 left: 50%;
@@ -15,18 +17,22 @@
                 background-color: black;
             }
             .topLine{
-                position: absolute;
-                top: 10px;
+                position: relative;
+                top: 35px;
             }
             .middleLine{
-                position: absolute;
+                position: relative;
+                top: 45px;
             }
             .bottomLine{
-                position: absolute;
-                bottom: 15px;
+                position: relative;
+                top: 60px;
             }
             .menuToggle:hover .topLine{
                 transform: rotate(45deg);
+            }
+            .menuToggle:hover .bottomLine{
+                transform: rotate(-45deg);
             }
         </style>       
     </head>
