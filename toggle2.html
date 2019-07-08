@@ -7,17 +7,21 @@
                 height: 100px;
                 width: 100px;
                 border-radius: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .not-clicked{
+                height: 100%;
+                width: 100%;
                 background-color: red;
             }
             .clicked{
-                height: 100px;
-                width: 100px;
-                border-radius: 50%;
+                height: 100%;
+                width: 100%;
                 background-color: green;
             }
         </style>
         <script>
-            $(".circle").click(function () {
+            $(".not-clicked").click(function () {
                 $(this).toggleClass(".clicked");
             })
         </script>        
@@ -25,6 +29,8 @@
 
     <body>
         <h1>Playing with a toggle button</h1>
-        <div class="circle"></div>
+        <div class="circle">
+            <div class="not-clicked"></div>
+        </div>
     </body>
 </html>
