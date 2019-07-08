@@ -10,6 +10,7 @@
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
+                background-color:cadetblue;
             }
             .topLine, .middleLine, .bottomLine{
                 height: 5px;
@@ -18,7 +19,7 @@
             }
             .topLine{
                 position: relative;
-                top: 35px;
+                top: 30px;
             }
             .middleLine{
                 position: relative;
@@ -29,10 +30,10 @@
                 top: 60px;
             }
             .menuToggle:hover .topLine{
-                transform: rotate(45deg);
+                transform: rotate(45deg), translate(0, 10px);
             }
             .menuToggle:hover .bottomLine{
-                transform: rotate(-45deg);
+                transform: rotate(-45deg), translate(0, -10px);
             }
         </style>       
     </head>
