@@ -100,12 +100,20 @@
             margin-top: 0;
             margin-bottom: 40px;
         }
+        .footer{
+            position: relative;
+            color: grey;
+        }
         .copyright{
-            text-align: center;
+            position: absolute;
+            right: 150px;
             font-style: italic;
             font-size: 12px;
-            color: grey;
             margin-bottom: 12px;
+        }
+        .footerNav{
+            position: absolute;
+            left: 150px;
         }
     </style>
 </head>
@@ -119,8 +127,13 @@
         <p>This is some sample text and stuff.</p>
     </div>
 
-    <div class = "copyright">
-        © 2019 Anna Schmult. All rights reserved.
+    <div class = "footer">
+        <div class = "copyright">
+            © 2019 Anna Schmult. All rights reserved.
+        </div>
+        <div class = "footerNav">
+            This is where the navigation buttons would go.
+        </div>
     </div>
 </body>
 </html>
