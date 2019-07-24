@@ -10,6 +10,7 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
             margin:0;
+            background-color: gray;
         }
         .background{
             background-image: url("pics/Wood-Background.png");
@@ -17,20 +18,22 @@
             background-position: center;
             background-size: 100vw;
             padding: 50px;
+            position: absolute;
+            z-index: -1;
         }
         .box{
             background-color: white;
             border-radius: 4px;
             box-shadow:0 0 15px #999999;
-            height: 80vh;        
+            height: 80vh;
+            margin: 50px;
         }
     </style>
 </head>
 <body>
-    <div class = "background">
-        <!--<div class = "box">
-            <h3>This is my home page.</h3>
-        </div> -->
+    <div class = "background"></div>
+    <div class = "box">
+        <h3>Hi.</h3>
     </div>
 </body>
 </html>
