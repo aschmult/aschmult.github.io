@@ -13,6 +13,17 @@
             background-color: #ffb3b3;
         }
         /*Background image --> just chiling behind everything else*/
+        .background{
+            width: 100vw;
+            height: 70vh;
+            background-image: url("pics/Wood-Background-Vertical.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100vw;
+            position: absolute;
+            z-index: -1;
+            margin: 0;
+        }
         @media only screen and (min-width: 800px){
             .background{
                 width: 100vw;
@@ -26,16 +37,15 @@
                 margin: 0;
             }
         }
-        .background{
-            width: 100vw;
+        .box{
+            background-color: white;
+            border-radius: 4px;
+            box-shadow:0 0 15px #8c8c8c;
+            margin: auto;
             height: 70vh;
-            background-image: url("pics/Wood-Background-Vertical.png");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: 100vw;
-            position: absolute;
-            z-index: -1;
-            margin: 0;
+            width: 70vw;
+            margin-top: 200px;
+            margin-bottom: 50px;
         }
         @media only screen and (min-width: 800px){
             .box{
@@ -48,16 +58,6 @@
                 margin-top: 200px;
                 margin-bottom: 40px;
             }
-        }
-        .box{
-            background-color: white;
-            border-radius: 4px;
-            box-shadow:0 0 15px #8c8c8c;
-            margin: auto;
-            height: 70vh;
-            width: 70vw;
-            margin-top: 200px;
-            margin-bottom: 50px;
         }
         .copyright{
             text-align:center;
