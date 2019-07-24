@@ -90,15 +90,16 @@
                 padding: 30px;
             }
         }
-        .box{
-            background-color: white;
-            border-radius: 4px;
-            box-shadow:0 0 15px #8c8c8c;
-            margin: auto;
-            height: 70vh;
-            width: 85vw;
-            margin-top: 0;
-            margin-bottom: 40px;
+        @media only screen and (min-width: 800px){
+            .section{
+                display: grid;
+                grid-gap: 60px;
+                grid-template-columns: 220px 1px auto;
+                text-align: justify;
+            }
+        }
+        .line{
+            background-color: grey;
         }
         .copyright{
             text-align: center;
@@ -116,7 +117,15 @@
     </div>
 
     <div class = "box">
-        <p>This is some sample text and stuff.</p>
+        <div class = "section">
+            <div class = "photo">
+                <img src = pics/Personal-Photo.jpg/>
+            </div>
+            <div class = "line"></div>
+            <div class = "text">
+                <p>This is some text, blah blah blah.</p>
+            </div>
+        </div>
     </div>
 
     <div class = "copyright">
