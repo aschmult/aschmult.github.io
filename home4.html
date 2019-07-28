@@ -119,11 +119,19 @@
             background-color: grey;
         }
         @media only screen and (min-width: 800px){
+            .text{
+                position: relative;
+            }
+        }
+        @media only screen and (min-width: 800px){
             .aboutMenu{
                 display:initial;
                 background-color:lightblue;
-                margin: 0 auto;
-                max-width: 400px;
+                position: absolute;
+                left:0;
+                right:0;
+                margin-left:auto;
+                margin-right:auto;
             }
             .aboutMenu a{
                 display: inline-block;
