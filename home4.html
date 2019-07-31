@@ -196,14 +196,19 @@
         .footer{
             font-size: 16px;
             color: #666666;
-            width: 85vw;
+            width: 80vw;
             margin: auto;
             margin-bottom: 16px;
-            text-decoration: none;
         }
         .footer a{
             color: #666666;
             text-decoration: none;
+        }
+        .navigation{
+            float: left;
+        }
+        .copyright{
+            float: right;
         }
     </style>
 </head>
@@ -313,8 +318,12 @@
     </div> <!--End box-->
 
     <div class = "footer">
-        <span><a href = "#about">Home</a></span>   <span><a href = "mailto:aschmult@villanova.edu" target="_top">Email</a></span>   <span><a href = "pics/AnnaSchmultResume.pdf" target="_blank">Resume</a></span>
-        <span style = "text-align: right; font-style: italic;">© 2019 Anna Schmult. All rights reserved.</span>
+        <div class = "navigation">
+            <span><a href = "#about">Home</a></span>   <span><a href = "mailto:aschmult@villanova.edu" target="_top">Email</a></span>   <span><a href = "pics/AnnaSchmultResume.pdf" target="_blank">Resume</a></span>
+        </div>
+        <div class = "copyright">
+            <span style = "text-align: right; font-style: italic;">© 2019 Anna Schmult. All rights reserved.</span>
+        </div>
     </div>
 </body>
 </html>
