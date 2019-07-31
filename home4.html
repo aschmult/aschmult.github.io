@@ -121,12 +121,16 @@
 
         /*the sections within the box*/
         @media only screen and (min-width: 800px){
-            .section{
+            .sectionSingle{
                 display: grid;
                 grid-gap: 60px;
                 grid-template-columns: 250px 1px auto;
                 text-align: justify;
-                margin-bottom: 60px;
+            }
+            .sectionDouble{
+                display: grid;
+                grid-gap: 60px;
+                text-align: justify;
             }
         }
         .line{
@@ -198,7 +202,7 @@
     </div>
 
     <div class = "box about" id = "about"> <!--The box information goes in-->
-        <div class = "section"> <!--The grid layout-->
+        <div class = "sectionSingle"> <!--The grid layout-->
             <div class = "photo"> <!--Photo/image for the text-->
                 <img src = "pics/Personal-Photo.png" alt = "A photo of Anna Schmult holding a pineapple pinata." style = "width:250px;">
             </div>
@@ -218,7 +222,7 @@
 
     <div class = "box education" id = "education"> <!--The box information goes in-->
         <h2>Education</h2>
-        <div class = "section"> <!--The grid layout-->
+        <div class = "sectionSingle"> <!--The grid layout-->
             <div class = "photo"> <!--Photo/image for the text-->
                 <img src = "pics/Villanova-Seal.png" alt = "The seal of Villanova University." style = "width:250px;">
             </div>
@@ -249,7 +253,7 @@
     </div> <!--End box-->
 
     <div class = "box experience" id = "experience"> <!--The box information goes in-->
-        <div class = "section"> <!--The grid layout-->
+        <div class = "sectionSingle"> <!--The grid layout-->
             <div class = "photo"> <!--Photo/image for the text-->
                 <img src = "pics/Personal-Photo.png" alt = "A photo of Anna Schmult holding a pineapple pinata." style = "width:250px;">
             </div>
@@ -261,7 +265,7 @@
     </div> <!--End box-->
 
     <div class = "box hobbies" id = "hobbies"> <!--The box information goes in-->
-        <div class = "section"> <!--The grid layout-->
+        <div class = "sectionSingle"> <!--The grid layout-->
             <div class = "photo"> <!--Photo/image for the text-->
                 <img src = "pics/Personal-Photo.png" alt = "A photo of Anna Schmult holding a pineapple pinata." style = "width:250px;">
             </div>
