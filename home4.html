@@ -102,9 +102,9 @@
             box-shadow:0 0 15px #8c8c8c;
             margin: auto;
             margin-top:0;
-            width: 85vw;
+            width: 90vw;
             margin-bottom: 30px;
-            padding: 20px;
+            padding: 5vw;
         }
         @media only screen and (min-width: 800px){
             .box{
@@ -150,6 +150,9 @@
         }
 
         /*the photo*/
+        .photo{
+            justify-self: center;
+        }
         @media only screen and (min-width: 800px){
             .photo{
                 align-self: center;
@@ -157,6 +160,22 @@
         }
 
         /*the text*/
+        .text, .textAbout{
+            position: relative;
+        }
+        .text a{
+            text-align: center;
+            color: white;
+            background-color: #a6a6a6;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 4px;
+            position: absolute;
+            left:0;
+            right:0;
+            margin-left:auto;
+            margin-right:auto;
+        }
         @media only screen and (min-width: 800px){
             .text, .textAbout{
                 position: relative;
