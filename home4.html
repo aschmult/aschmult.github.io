@@ -144,11 +144,6 @@
             }
         }
 
-        /*the line dividing the photo and text*/
-        .line{
-            background-color: grey;
-        }
-
         /*the photo*/
         .photo{
             justify-self: center;
@@ -156,6 +151,16 @@
         @media only screen and (min-width: 800px){
             .photo{
                 align-self: center;
+            }
+        }
+
+        /*the line dividing the photo and text*/
+        .line{
+            /*there's nothing here on mobile*/
+        }
+        @media only screen and (min-width: 800px){
+            .line{
+                background-color: grey;
             }
         }
 
@@ -222,7 +227,7 @@
 
         /*to divide sections within a box*/
         .horizontalLine{
-            height: 20px;
+            height: 40px;
         }
         @media only screen and (min-width: 800px){
             .horizontalLine{
