@@ -121,6 +121,12 @@
         }
 
         /*the sections within the box*/
+        .sectionLeft, .sectionRight{
+            display: grid;
+            grid-gap: 20px;
+            grid-template-rows: auto 1px auto;
+            text-align: justify;
+        }
         @media only screen and (min-width: 800px){
             .sectionLeft{
                 display: grid;
@@ -137,14 +143,20 @@
                 text-align: justify;
             }
         }
+
+        /*the line dividing the photo and text*/
         .line{
             background-color: grey;
         }
+
+        /*the photo*/
         @media only screen and (min-width: 800px){
             .photo{
                 align-self: center;
             }
         }
+
+        /*the text*/
         @media only screen and (min-width: 800px){
             .text, .textAbout{
                 position: relative;
@@ -168,7 +180,7 @@
                 margin-right:auto;
             }
         }
-        @media only screen and (min-width: 800px){
+        @media only screen and (min-width: 800px){ /*for the buttons in the about section text*/
             .aboutMenu{
                 display:initial;
                 width: 305px;
@@ -188,6 +200,8 @@
                 margin-left: 10px;
             }
         }
+
+        /*to divide sections within a box*/
         .horizontalLine{
             height: 20px;
         }
