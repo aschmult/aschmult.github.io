@@ -3,10 +3,15 @@
 <head>
     <title>Anna Schmult</title>
     <style>
+        .voiceover{
+            border: grey;
+            border-radius: 4px;
+        }
         button{
-            width: 20px;
             border: none;
             background-color: white;
+            position: relative;
+            display: inline-block;
         }
     </style>
 </head>
@@ -14,13 +19,12 @@
 <body>
     <p>Welcome to New York</p>
     <audio id="audio" src="audio/Welcome-to-New-York.mp3" ></audio>
-    <button onClick = "playAudio()" type = "button">▶</button>
-    <button onClick = "pauseAudio()" type = "button">❚❚</button>
+    <div class = "voiceover">
+        <button>Voiceover: </button>
+        <button onClick = "playAudio()" type = "button">▶</button>
+        <button onClick = "pauseAudio()" type = "button">❚❚</button>
+    </div>
     <script>
-        //function play(){
-        //    var audio = document.getElementById("audio");
-        //    audio.play();
-        //}
         var x = document.getElementById("audio");
         function playAudio(){
             x.play();
@@ -29,8 +33,6 @@
             x.pause();
         }
     </script>
-    <!--<input type="button" value="Click for voiceover"  onclick="play()"> 
-    <audio id="audio" src="audio/Welcome-to-New-York.mp3" ></audio> -->
 </body>
 
 </html>
