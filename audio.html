@@ -4,14 +4,29 @@
     <title>Anna Schmult</title>
     <style>
         .voiceover{
-            border: grey;
-            border-radius: 4px;
+            position: relative;
+            display: inline-block;
+        }
+        button .tipText{
+            width: 120px;
+            visibility: hidden;
+            background-color: #b3b3b3;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 100%;
+            margin-left: -70px;
+        }
+        button:hover .tipText {
+            visibility: visible;
         }
         button{
             border: none;
             background-color: white;
             position: relative;
-            display: inline-block;
         }
     </style>
 </head>
@@ -21,8 +36,8 @@
     <audio id="audio" src="audio/Welcome-to-New-York.mp3" ></audio>
     <div class = "voiceover">
         <button>Voiceover: </button>
-        <button onClick = "playAudio()" type = "button">▶</button>
-        <button onClick = "pauseAudio()" type = "button">❚❚</button>
+        <button onClick = "playAudio()" type = "button">▶<span class = "tipText">Play voiceover</span></button>
+        <button onClick = "pauseAudio()" type = "button">❚❚<span class = "tipText">Pause voiceover</span></button>
     </div>
     <script>
         var x = document.getElementById("audio");
