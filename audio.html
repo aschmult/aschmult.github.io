@@ -97,24 +97,44 @@
             </div>
         </div>
 
-    <audio id="audio" src="audio/Welcome-to-New-York.mp3" ></audio>
+    <audio id="audio1" src="audio/Welcome-to-New-York.mp3" ></audio>
+    <audio id="audio2" src="audio/I-love-my-job.mp3"></audio>
+
     <div class = "box">
         <h2>My Professional Profile</h2>
         <div class = "voiceover">
             <button>Voiceover: </button>
-            <button onClick = "playAudio()" type = "button">▶<span class = "tipText">Play voiceover</span></button>
-            <button onClick = "pauseAudio()" type = "button">❚❚<span class = "tipText">Pause voiceover</span></button>
+            <button onClick = "playAudio1()" type = "button">▶<span class = "tipText">Play voiceover</span></button>
+            <button onClick = "pauseAudio1()" type = "button">❚❚<span class = "tipText">Pause voiceover</span></button>
         </div>
         <p>This is a project I created in the fall of my sophomore year at Villanova. I hope that, by outlining what my strenthgs, expereinces, and goals are professionally, I will be better able to create a plan for success in my professional life.</p>
     </div>
 
+    <div class = "box">
+        <h2>Another sectionm another voiceover.</h2>
+        <div class = "voiceover">
+            <button>Voiceover: </button>
+            <button onClick = "playAudio2()" type = "button">▶<span class = "tipText">Play voiceover</span></button>
+            <button onClick = "pauseAudio2()" type = "button">❚❚<span class = "tipText">Pause voiceover</span></button>
+        </div>
+        <p>And here's some text.</p>
+    </div>
+
     <script>
-        var x = document.getElementById("audio");
-        function playAudio(){
-            x.play();
+        var a = document.getElementById("audio1");
+        function playAudio1(){
+            a.play();
         }
-        function pauseAudio(){
-            x.pause();
+        function pauseAudio1(){
+            a.pause();
+        }
+
+        var b = document.getElementById("audio2");
+        function playAudio1(){
+            b.play();
+        }
+        function pauseAudio1(){
+            b.pause();
         }
     </script>
 </body>
