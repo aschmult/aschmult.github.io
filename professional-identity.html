@@ -169,6 +169,21 @@
         .active, .dot:hover {
             background-color: #b3b3b3;
         }
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        @-webkit-keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+        }
+        @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+        }
     </style>
 </head>
 
@@ -184,7 +199,7 @@
     <audio id="audio2" src="audio/I-love-my-job.mp3"></audio>
 
     <div class = "slideshow-container">
-        <div class = "mySlides">
+        <div class = "mySlides fade">
             <h2>An Introduction About Me</h2>
             <div class = "voiceover">
                 <button>Voiceover: </button>
@@ -226,7 +241,7 @@
             </table>
         </div>
 
-        <div class = "mySlides">
+        <div class = "mySlides fade">
             <h2>My Journey at Villanova</h2>
             <div class = "voiceover">
                 <button>Voiceover: </button>
@@ -239,7 +254,7 @@
             <p>In addition to the resources available through classes and professional resources, I have learned a lot through the extracurricular activities I participate in, particularly Villanova University Tech Crew, a student-run event production company. Being a member of the Tech Crew Executive Board and Web Team has ...</p>
         </div>
 
-        <div class = "mySlides">
+        <div class = "mySlides fade">
             <h2>My Career Plans</h2>
             <div class = "voiceover">
                 <button>Voiceover: </button>
@@ -249,7 +264,7 @@
             <p>Although I'm interested in the entire intersection of business and technology, one field that interests me in particular is database management. My experiences with extracurricular activities has given me the chance to create and manage a database, and I have enjoyed the challenge of figuring out how to best collect, store, and retrieve data. Currently, I am working to be able to store files in the Tech Crew database, which currently doesn't support that function. This will allow us to upload tech riders, pictures of a venue, or equipment instruction guides with a specific event.</p>
         </div>
 
-        <div class = "mySlides">
+        <div class = "mySlides fade">
             <h2>The Backpack-to-Briefcase Professional Development Program</h2>
             <div class = "voiceover">
                 <button>Voiceover: </button>
