@@ -42,7 +42,19 @@
             top: 50%;
             -ms-transform: translateY(-50%);
             transform: translateY(-50%);
-            background-color: blue;
+        }
+        .contacts a{
+            cursor: pointer;
+            margin: 10px;
+            padding: 4px 10px 4px 10px;
+            border-radius: 12px;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+            color: white;
+            text-decoration: none;
+        }
+        .contacts a:hover{
+            background-color: rgb(217, 217, 217, 30%);
         }
 
         /*Copyright statement (footer)*/
@@ -116,7 +128,9 @@
     <div class=header>
         <h1>ANNA SCHMULT</h1>
         <div class = "contacts">
-            <p>This is the contacts div.</p>
+            <a href = "https://www.linkedin.com/in/anna-schmult-876971184/" target="_blank">LinkedIn</a>
+            <a href = "mailto:aschmult@villanova.edu" target="_top">Email</a>
+            <a href = "pics/AnnaSchmultResume.pdf" target="_blank">Resume</a>
         </div>
     </div>
 
