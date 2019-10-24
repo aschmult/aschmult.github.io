@@ -227,8 +227,8 @@
             <p>Although I'm interested in the entire intersection of business and technology, one field that interests me in particular is database management. My experiences with extracurricular activities has given me the chance to create and manage a database, and I have enjoyed the challenge of figuring out how to best collect, store, and retrieve data. Currently, I am working to be able to store files in the Tech Crew database, which currently doesn't support that function. This will allow us to upload tech riders, pictures of a venue, or equipment instruction guides with a specific event.</p>
         </div>
 
-        <a class = "prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class = "next" onclick="plusSlides(1)">&#10095;</a>
+        <a class = "prev" id = "prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class = "next" id = "next" onclick="plusSlides(1)">&#10095;</a>
     </div>
 
     <!-- <div class = "section">
@@ -274,6 +274,10 @@
         function plusSlides(n) {
             showSlides(slideIndex += n)
         }
+
+        var prev = getElementById("prev");
+        var next = getElementById("next");
+
         function showSlides(n){
             var i;
             var slides = document.getElementsByClassName("mySlides");
@@ -281,11 +285,19 @@
                 slideIndex = 1
             }
                 if (n < 1) {
-                    slideIndex = slide.length
+                    slideIndex = slides.length
                 }
                 for (i=0; i < slides.length; i++){
                     slides[i].style.display = "none";
                 }
+            /* Start my code */
+            if (slideIndex == 1){
+                prev.style.display = "none";
+            }
+            if (slideIndex == slides.length){
+                next.style.display = "none";
+            }
+            /* End my code */
             slides[slideIndex-1].style.display = "block";
         }
     </script>
