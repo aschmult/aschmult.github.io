@@ -136,6 +136,7 @@
             font-size: 20px;
             border-radius: 0 3px 3px 0;
             user-select: none;
+            transition: .6s ease;
         }
         /* Position the "next button" to the right */
         .next {
@@ -146,6 +147,27 @@
         .prev:hover, .next:hover {
             background-color: #f2f2f2;
             color: black;
+        }
+        /* The dot/bullet/indicator container */
+        .dot-container {
+            text-align: center;
+            padding: 20px;
+            background: #ddd;
+        }
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        /* Add a background color to the active dot/circle */
+        .active, .dot:hover {
+            background-color: #717171;
         }
     </style>
 </head>
@@ -227,8 +249,24 @@
             <p>Although I'm interested in the entire intersection of business and technology, one field that interests me in particular is database management. My experiences with extracurricular activities has given me the chance to create and manage a database, and I have enjoyed the challenge of figuring out how to best collect, store, and retrieve data. Currently, I am working to be able to store files in the Tech Crew database, which currently doesn't support that function. This will allow us to upload tech riders, pictures of a venue, or equipment instruction guides with a specific event.</p>
         </div>
 
+        <div class = "mySlides">
+            <h2>The Backpack-to-Briefcase Professional Development Program</h2>
+            <div class = "voiceover">
+                <button>Voiceover: </button>
+                <button onClick = "playAudio1()" type = "button">▶<span class = "tipText">Play voiceover</span></button>
+                <button onClick = "pauseAudio1()" type = "button">❚❚<span class = "tipText">Pause voiceover</span></button>
+            </div>
+            <p>This will be the section where I talk about what the Villanova B2B program is and what I've learned through it.</p>
+        </div>
+
         <a class = "prev" id = "prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class = "next" id = "next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <div class = "dotContainer">
+        <span class = "dot" onclick = "currentSlide(1)"></span>
+        <span class = "dot" onclick = "currentSlide(2)"></span>
+        <span class = "dot" onclick = "currentSlide(3)"></span>
+        <span class = "dot" onclick = "currentSlide(4)"></span>
     </div>
 
     <!-- <div class = "section">
@@ -268,19 +306,18 @@
 
 
         var slideIndex = 1;
-
         showSlides(slideIndex);
 
         function plusSlides(n) {
             showSlides(slideIndex += n)
         }
-
-        var prev = getElementById("prev");
-        var next = getElementById("next");
-
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
         function showSlides(n){
             var i;
             var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
             if (n > slides.length) {
                 slideIndex = 1
             }
@@ -290,7 +327,11 @@
                 for (i=0; i < slides.length; i++){
                     slides[i].style.display = "none";
                 }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
             slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
         }
     </script>
 
