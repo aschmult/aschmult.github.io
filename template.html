@@ -36,7 +36,7 @@
         }
         h1{
             font-weight: 100;
-            font-size: 210%;
+            font-size: 220%;
             text-align: center;
             margin: 35px 0 60px 0;
         }
@@ -92,8 +92,6 @@
             }
             .contacts img{
                 height: 20px;
-                /*transform: translateY(2px);
-                -ms-transform: translateY(2px);*/
             }
             .contacts a:hover{
                 background-color: rgb(217, 217, 217, 17%);
@@ -141,15 +139,27 @@
         .slideshow-container {
             position: relative;
             background: white;
-            margin: 60px;
-            box-shadow: 0 0 15px #737373;
-            border-radius: 4px;
+            margin: 20px;
+            box-shadow: 0 0 20px #737373;
+            border-radius: 3px;
         }
         /* Slides */
         .mySlides {
             display: none;
-            padding: 40px 80px 40px 80px;
+            padding: 10px 10px 10px 10px;
             text-align: justify;
+        }
+        @media only screen and (min-width: 800px){
+            .slideshow-container {
+                margin: 60px;
+                border-radius: 4px;
+            }
+            /* Slides */
+            .mySlides {
+                display: none;
+                padding: 40px 80px 40px 80px;
+                text-align: justify;
+            }
         }
 
         /*Copyright statement (footer)*/
