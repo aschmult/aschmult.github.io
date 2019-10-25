@@ -35,13 +35,23 @@
         }
         h1{
             font-weight: 100;
-            font-size: 250%;
+            font-size: 150%;
             text-align: center;
             margin: 60px;
         }
         .contacts{
             color: white;
             text-align: center;
+        }
+        .contacts a{
+            margin: 6px;
+            padding: 5px 7px 5px 7px;
+            border-radius: 6px;
+            display: inline-block;
+            vertical-align: middle;
+            color: white;
+            text-decoration: none;
+            font-size: 120%
         }
         @media only screen and (min-width: 800px){
             .header{
@@ -60,48 +70,15 @@
                 -ms-transform: translateY(-50%);
                 transform: translateY(-50%);
             }
-        }
-        .contacts a{
-            cursor: pointer;
-            margin: 6px;
-            padding: 5px 7px 5px 7px;
-            border-radius: 6px;
-            display: inline-block;
-            vertical-align: middle;
-            transition: background-color 0.6s ease;
-            color: white;
-            text-decoration: none;
-            font-size: 120%
-        }
-        .contacts a:hover{
-            background-color: rgb(217, 217, 217, 17%);
-        }
-
-        /*Copyright statement (footer)*/
-        .copyright{
-            text-align:center;
-            font-style:italic;
-            font-size:10px;
-            color:#262626;
-            margin-bottom:12px;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-        }
-
-        /* Slideshow container */
-        .slideshow-container {
-            position: relative;
-            background: white;
-            margin: 60px;
-            box-shadow: 0 0 15px #737373;
-            border-radius: 4px;
-        }
-        /* Slides */
-        .mySlides {
-            display: none;
-            padding: 40px 80px 40px 80px;
-            text-align: justify;
+            .contacts a{
+                cursor: pointer;
+                display: inline-block;
+                vertical-align: middle;
+                transition: background-color 0.6s ease;
+            }
+            .contacts a:hover{
+                background-color: rgb(217, 217, 217, 17%);
+            }
         }
 
         /* The menu container */
@@ -139,6 +116,33 @@
         @keyframes fade {
             from {opacity: .4} 
             to {opacity: 1}
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            position: relative;
+            background: white;
+            margin: 60px;
+            box-shadow: 0 0 15px #737373;
+            border-radius: 4px;
+        }
+        /* Slides */
+        .mySlides {
+            display: none;
+            padding: 40px 80px 40px 80px;
+            text-align: justify;
+        }
+
+        /*Copyright statement (footer)*/
+        .copyright{
+            text-align:center;
+            font-style:italic;
+            font-size:10px;
+            color:#262626;
+            margin-bottom:12px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
