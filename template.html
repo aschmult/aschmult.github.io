@@ -184,21 +184,7 @@
             padding: 1px 16px 1px 16px;
             text-align: justify;
         }
-        /* Fading animation */
-        .fade {
-            -webkit-animation-name: fade;
-            -webkit-animation-duration: 1.5s;
-            animation-name: fade;
-            animation-duration: 1.5s;
-        }
-        @-webkit-keyframes fade {
-            from {opacity: .4} 
-            to {opacity: 1}
-        }
-        @keyframes fade {
-            from {opacity: .4} 
-            to {opacity: 1}
-        }
+        
         @media only screen and (min-width: 800px){
             .slideshow-container {
                 margin: 60px;
@@ -209,6 +195,20 @@
                 display: none;
                 padding: 40px 80px 40px 80px;
                 text-align: justify;
+            }
+            @-webkit-keyframes fade {
+                from {opacity: .4} 
+                to {opacity: 1}
+            }
+            @keyframes fade {
+                from {opacity: .4} 
+                to {opacity: 1}
+            }
+            .fade {
+                -webkit-animation-name: fade;
+                -webkit-animation-duration: 1.5s;
+                animation-name: fade;
+                animation-duration: 1.5s;
             }
         }
 
