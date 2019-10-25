@@ -98,41 +98,76 @@
             }
         }
 
-        /* The menu container */
-        .menu-container {
-            text-align: center;
-            position: relative;
-            margin: 20px;
-            width: 100%;
+        @media only screen and (max-width: 800px){
+            /*SIDE NAV*/
+            .sidenav {
+                height: 100%; /* 100% Full-height */
+                width: 0; /* 0 width - change this with JavaScript */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Stay on top */
+                top: 0; /* Stay at the top */
+                left: 0;
+                background-color: #111; /* Black*/
+                overflow-x: hidden; /* Disable horizontal scroll */
+                padding-top: 60px; /* Place content 60px from the top */
+                transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+                }
+
+            /* The navigation menu links */
+            .sidenav a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+                transition: 0.3s;
+            }
+
+            /* When you mouse over the navigation links, change their color */
+            .sidenav a:hover {
+                color: #f1f1f1;
+            }
+
+            /* Position and style the close button (top right corner) */
+            .sidenav .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 50px;
+            }
+            .menu-container{
+                display:none;
+            }
+
         }
-        /* The menu items */
-        .menu {
-            cursor: pointer;
-            margin: 10px;
-            padding: 4px 10px 4px 10px;
-            border-radius: 12px;
-            color: #262626;
-            display: inline-block;
-            transition: background-color 0.6s ease;
-        }
-        /* Add a background color to the active menu item */
-        .menu:hover, .active {
-            background-color: rgb(217, 217, 217, 30%);
-        }
-        /* Fading animation */
-        .fade {
-            -webkit-animation-name: fade;
-            -webkit-animation-duration: 1.5s;
-            animation-name: fade;
-            animation-duration: 1.5s;
-        }
-        @-webkit-keyframes fade {
-            from {opacity: .4} 
-            to {opacity: 1}
-        }
-        @keyframes fade {
-            from {opacity: .4} 
-            to {opacity: 1}
+
+        @media only screen and (min-width: 800px){
+            /*REGULAR MENU*/
+            /* The menu container */
+            .menu-container {
+                text-align: center;
+                position: relative;
+                margin: 20px;
+                width: 100%;
+            }
+            /* The menu items */
+            .menu {
+                cursor: pointer;
+                margin: 10px;
+                padding: 4px 10px 4px 10px;
+                border-radius: 12px;
+                color: #262626;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+            }
+            /* Add a background color to the active menu item */
+            .menu:hover, .active {
+                background-color: rgb(217, 217, 217, 30%);
+            }
+            .sidenav, .openbtn{
+                display:none;
+            }
         }
 
         /* Slideshow container */
@@ -148,6 +183,21 @@
             display: none;
             padding: 1px 16px 1px 16px;
             text-align: justify;
+        }
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        @-webkit-keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+        }
+        @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
         }
         @media only screen and (min-width: 800px){
             .slideshow-container {
@@ -187,6 +237,15 @@
         </div>
     </div>
 
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <span class = "menu" onclick = "currentSlide(1)">Section 1</span>
+        <span class = "menu" onclick = "currentSlide(2)">Section 2</span>
+        <span class = "menu" onclick = "currentSlide(3)">Section 3</span>
+        <span class = "menu" onclick = "currentSlide(4)">Section 4</span>
+    </div>
+    <span class = "openbtn" onclick = "openNav()">Open side nav menu</span>
+
     <div class = "menu-container">
         <span class = "menu" onclick = "currentSlide(1)">Section 1</span>
         <span class = "menu" onclick = "currentSlide(2)">Section 2</span>
@@ -223,6 +282,12 @@
         showSlides(slideIndex);
         function currentSlide(n) {
             showSlides(slideIndex = n);
+        }
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
         }
         function showSlides(n){
             var i;
