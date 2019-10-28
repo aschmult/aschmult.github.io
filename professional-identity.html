@@ -167,7 +167,7 @@
         }
         /* Add a background color to the active dot/circle */
         .active {
-            background-color: #b3b3b3;
+            background-color: #999999;
         }
         .dot:hover {
             background-color: #b3b3b3;
@@ -206,11 +206,11 @@
             <h2>An Introduction About Me</h2>
             <div class = "voiceover">
                 <button>Voiceover: </button>
-                <button onClick = "playAudio1()" type = "button">▶<span class = "tipText">Play voiceover</span></button>
-                <button onClick = "pauseAudio1()" type = "button">❚❚<span class = "tipText">Pause voiceover</span></button>
+                <button onClick = "playAudio(1)" type = "button">▶<span class = "tipText">Play voiceover</span></button>
+                <button onClick = "pauseAudio(1)" type = "button">❚❚<span class = "tipText">Pause voiceover</span></button>
             </div>
             <p>I'm Anna Schmult, a sophomore attending the Villanova School of Business, where I'm interested in the intersection of technology and business.</p>
-            <p>Originally from Princeton, New Jersey, I chose to come to Villanova after hearing about the comprehensive education I could receive at VSB, and feeling the warm atmosphere around the entire Villanova campus.</p>
+            <p>Originally from Princeton, New Jersey, I chose to come to Villanova after hearing about the comprehensive education I could receive at VSB, and feeling the warm atmosphere around the entire Villanova campus. Here, I've become immersed in the classes I have taken, the resources and community of the business school, and Villanova University Tech Crew, a student-run event production business. </p>
             <p>The first step to finding my future success is to define, for myself and for others, the ways in which I am already successful and the things that could keep me engaged for success in the future.</p>
             <table>
                 <tr>
@@ -248,8 +248,8 @@
             <h2>My Journey at Villanova</h2>
             <div class = "voiceover">
                 <button>Voiceover: </button>
-                <button onClick = "playAudio2()" type = "button">▶<span class = "tipText">Play voiceover</span></button>
-                <button onClick = "pauseAudio2()" type = "button">❚❚<span class = "tipText">Pause voiceover</span></button>
+                <button onClick = "playAudio(2)" type = "button">▶<span class = "tipText">Play voiceover</span></button>
+                <button onClick = "pauseAudio(2)" type = "button">❚❚<span class = "tipText">Pause voiceover</span></button>
             </div>
             <p>When I arrived at Villanova, I wasn't exactly sure what field of business I was most interested in. As time went on, and I got involved in activities around campus and explored careers through my core business classes, I discovered that my interests lie at the intersection of business and technology.</p>
             <p>I'm planning to declare majors in Management Information Systems and Business Analytics, and I have already declared a minor in Computer Science. The courses for these programs have some overlapping content, so I'm excited to be able to apply what I learn in one course to what I am learning in another.</p>
@@ -261,8 +261,8 @@
             <h2>My Career Plans</h2>
             <div class = "voiceover">
                 <button>Voiceover: </button>
-                <button onClick = "playAudio1()" type = "button">▶<span class = "tipText">Play voiceover</span></button>
-                <button onClick = "pauseAudio1()" type = "button">❚❚<span class = "tipText">Pause voiceover</span></button>
+                <button onClick = "playAudio(2)" type = "button">▶<span class = "tipText">Play voiceover</span></button>
+                <button onClick = "pauseAudio(2)" type = "button">❚❚<span class = "tipText">Pause voiceover</span></button>
             </div>
             <p>Although I'm interested in the entire intersection of business and technology, one field that interests me in particular is database management. My experiences with extracurricular activities has given me the chance to create and manage a database, and I have enjoyed the challenge of figuring out how to best collect, store, and retrieve data. Currently, I am working to be able to store files in the Tech Crew database, which currently doesn't support that function. This will allow us to upload tech riders, pictures of a venue, or equipment instruction guides with a specific event.</p>
         </div>
@@ -271,8 +271,8 @@
             <h2>The Backpack-to-Briefcase Professional Development Program</h2>
             <div class = "voiceover">
                 <button>Voiceover: </button>
-                <button onClick = "playAudio1()" type = "button">▶<span class = "tipText">Play voiceover</span></button>
-                <button onClick = "pauseAudio1()" type = "button">❚❚<span class = "tipText">Pause voiceover</span></button>
+                <button onClick = "playAudio(1)" type = "button">▶<span class = "tipText">Play voiceover</span></button>
+                <button onClick = "pauseAudio(1)" type = "button">❚❚<span class = "tipText">Pause voiceover</span></button>
             </div>
             <p>Backpack-to-Briefcase is the Villanova School of Business's professional development program. Stretching from freshman to senior year, it prepares students for the transition to the working world through workshops, projects, seminars, and advising resources. Sophomores take a semester long seminar course, which features guest speakers, interactive lessons, and projects to encourage students to explore the resources VSB has to offer. Topics covered include:</p>
             <ul style = "margin-left: 25px;">
@@ -317,22 +317,14 @@
     </div> -->
 
     <script>
-        var a = document.getElementById("audio1");
-        function playAudio1(){
-            a.play();
-        }
-        function pauseAudio1(){
-            a.pause();
-        }
+        var audio = document.getElementsByClassName("audio");
 
-        var b = document.getElementById("audio2");
-        function playAudio2(){
-            b.play();
+        function playAudio(n) {
+            audio[n].play();
         }
-        function pauseAudio2(){
-            b.pause();
+        function pauseAudio(n) {
+            audio[n].pause();
         }
-
 
         var slideIndex = 1;
         showSlides(slideIndex);
