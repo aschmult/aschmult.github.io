@@ -177,6 +177,8 @@ h1{
     display: none;
     padding: 1px 16px 1px 16px;
     text-align: justify;
+}
+.section{
     display: grid;
     grid-gap: 20px;
     grid-template-rows: auto auto;
@@ -184,11 +186,11 @@ h1{
 }
 .photo{
     justify-self:center;
-    background-color: yellowgreen;
+    background-color: cornflowerblue;
 }
 .text{
     position: relative;
-    background-color:cornflowerblue;
+    background-color: yellowgreen;
 }
 
 @media only screen and (min-width: 800px){
@@ -201,10 +203,13 @@ h1{
         display: none;
         padding: 40px 6vw 40px 6vw;
         text-align: justify;
+    }
+    .section{
         display: grid;
         grid-gap: 60px;
-        grid-template-columns: auto auto;
-        /*grid-template-rows: max-content;*/
+        grid-template-columns: 250px auto;
+        grid-template-rows: max-content;
+        text-align: justify;
     }
     .photo{
         align-self:center;
