@@ -178,6 +178,9 @@ h1{
     padding: 1px 16px 1px 16px;
     text-align: justify;
 }
+.mySlides h2{
+    margin-top: 0;
+}
 .section{
     display: grid;
     grid-gap: 20px;
