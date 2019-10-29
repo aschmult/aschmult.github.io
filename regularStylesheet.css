@@ -200,7 +200,7 @@ h1{
         text-align: justify;
     }
     .photo{
-        max-width: 250px;
+        width: 250px;
     }
     @-webkit-keyframes fade {
         from {opacity: .4} 
