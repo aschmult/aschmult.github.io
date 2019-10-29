@@ -205,6 +205,21 @@ h1{
         animation-duration: 1.5s;
     }
 }
+.section{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: auto auto;
+    text-align: justify;
+}
+@media only screen and (min-width: 800px;){
+    .section{
+        display: grid;
+        grid-gap: 60px;
+        grid-template-columns: 250px auto;
+        grid-template-rows: max-content;
+        text-align: justify;
+    }
+}
 
 /*Copyright statement (footer)*/
 .copyright{
