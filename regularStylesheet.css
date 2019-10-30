@@ -196,7 +196,7 @@ h1{
 .text{
     position: relative;
 }
-.text h3{
+h3 span{
     margin-bottom: 0px;
 }
 .text h4{
