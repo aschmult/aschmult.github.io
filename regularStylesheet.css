@@ -1,3 +1,4 @@
+/*Section setting up general stuff with the body*/
 html, body{
     overflow-x: hidden;
 }
@@ -106,7 +107,6 @@ h1{
         display: block;
         transition: 0.3s;
     }
-    /* Position and style the close button (top right corner) */
     .sidenav .closebtn {
         position: absolute;
         top: 110px;
@@ -138,14 +138,12 @@ h1{
 
 @media only screen and (min-width: 800px){
     /*REGULAR MENU*/
-    /* The menu container */
     .menu-container {
         text-align: center;
         position: relative;
         margin-top: 2vw;
         width: 100%;
     }
-    /* The menu items */
     .menu {
         cursor: pointer;
         margin: 10px;
@@ -155,7 +153,6 @@ h1{
         display: inline-block;
         transition: background-color 0.6s ease;
     }
-    /* Add a background color to the active menu item */
     .menu:hover, .active {
         background-color: rgb(217, 217, 217, 30%);
     }
@@ -164,7 +161,7 @@ h1{
     }
 }
 
-/* Slideshow container */
+/*Slides (cards)*/
 .slideshow-container {
     position: relative;
     background: white;
@@ -172,7 +169,6 @@ h1{
     box-shadow: 0 0 20px #737373;
     border-radius: 3px;
 }
-/* Slides */
 .mySlides {
     display: none;
     padding: 16px 16px 1px 16px;
@@ -190,7 +186,7 @@ h1{
 .sectionSpacer{
     background-color: grey;
     height: 1px;
-    margin: 10px;
+    margin: 10px 10px 20px 10px;
 }
 .photo{
     justify-self:center;
@@ -207,13 +203,11 @@ h1{
 .project h3{
     margin-bottom:0px;
 }
-
 @media only screen and (min-width: 800px){
     .slideshow-container {
         margin: 2vw 6vw 6vw 6vw;
         border-radius: 4px;
     }
-    /* Slides */
     .mySlides {
         display: none;
         text-align: justify;
@@ -228,7 +222,7 @@ h1{
     }
     .sectionSpacer{
         height: 30px;
-        background-color: none;
+        background-color: white;
         margin: 0;
     }
     .photo{
