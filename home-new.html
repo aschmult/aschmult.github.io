@@ -11,12 +11,12 @@
     <!--Header-->
     <div class=header>
         <h1>Anna Schmult</h1>
-        <div class = "contacts">
+        <div class = "contacts"> <!--Format the contacts in non-mobile format-->
             <a href = "https://www.linkedin.com/in/anna-schmult-876971184/" target="_blank"><img src = "pics/LinkedIn-Logo-Transparent2.png"></a>
             <a href = "mailto:aschmult@villanova.edu" target="_top"><img src = "pics/Email-Logo-Transparent2.png" ></a>
             <a href = "pics/AnnaSchmultResume.pdf" target="_blank" style = "border-radius: 12px; padding: 4px 10px 4px 10px;">Resume</a>
         </div>
-        <div class = "openbtn" onclick = "openNav()">
+        <div class = "openbtn" onclick = "openNav()"> <!--Button to open the navigation menu in mobile format-->
             <div class = "menuLine"></div>
             <div class = "menuLine middleLine"></div>
             <div class = "menuLine"></div>
@@ -24,7 +24,7 @@
     </div>
     
     <!--Navigation-->
-    <div id="mySidenav" class="sidenav">
+    <div id="mySidenav" class="sidenav"> <!--Set up menu and contacts in slide-out navigation pane for mobile format-->
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <h1>ANNA SCHMULT</h1>
         <a class = "menu" onclick = "currentSlide(1), closeNav()">About Me</a>
@@ -37,7 +37,7 @@
         <a href = "mailto:aschmult@villanova.edu" target="_top"><img src = "pics/Email-Logo-Transparent2.png" ></a>
     </div>
     
-    <div class = "menu-container">
+    <div class = "menu-container"> <!--Menu for non-mobile format-->
         <span class = "menu" onclick = "currentSlide(1)">About Me</span>
         <span class = "menu" onclick = "currentSlide(2)">Education</span>
         <span class = "menu" onclick = "currentSlide(3)">Experience</span>
@@ -45,7 +45,10 @@
         <span class = "menu" onclick = "currentSlide(5)">Projects</span>
     </div>
     
-    <div class = "slideshow-container">
+    <!--Page content-->
+    <div class = "slideshow-container"> <!--Slides (cards) go here-->
+
+        <!--Card 1: About Me-->
         <div class = "mySlides fade">
             <h2>About Me</h2>
             <div class = "section">
@@ -57,10 +60,13 @@
             </div>
         </div>
 
+        <!--Card 2: Education-->
         <div class = "mySlides fade">
             <h2>Education</h2>
-            <div class = "section">
-                <div class = "photo"><img src = "pics/Villanova-Seal.png" alt = "The seal of Villanova University." style = "width: 250px;"></div>
+            <div class = "section"> <!--Sections are for cards w/ more than one bit. Each section has photo on the left and text on the right.-->
+                <div class = "photo">
+                    <img src = "pics/Villanova-Seal.png" alt = "The seal of Villanova University." style = "width: 250px;">
+                </div>
                 <div class = "text">
                     <h3 style = "margin-bottom: 0px;">Villanova University</h3>
                     <h4>Villanova, PA</h4>
@@ -69,9 +75,11 @@
                     <p>Outside of classes, I enjoy playing and watching ice hockey and spending time with my team, as well as attending the events campus life has to offer. I dedicate a lot of my free time to Tech Crew, both as a job and a hobby.</p>
                 </div>
             </div>
-            <div class = "sectionSpacer"></div>
+            <div class = "sectionSpacer"></div> <!--Section spacer puts space between 2 sections w/in a single card.-->
             <div class = "section">
-                <div class = "photo"><img src = "pics/PHS-Logo.png" alt = "The logo of Princeton High School, featuring a large letter 'P' and a tiger in blue and black." style = "width: 250px;"></div>
+                <div class = "photo">
+                    <img src = "pics/PHS-Logo.png" alt = "The logo of Princeton High School, featuring a large letter 'P' and a tiger in blue and black." style = "width: 250px;">
+                </div>
                 <div class = "text">
                     <h3 style = "margin-bottom: 0px;">Princeton High School</h3>
                     <h4>Princeton, NJ</h4>
@@ -81,6 +89,7 @@
             </div>
         </div>
 
+        <!--Card 3: Experience-->
         <div class = "mySlides fade">
             <h2>Experience</h2>
             <div class = "section">
@@ -107,20 +116,27 @@
             </div>
         </div>
 
+        <!--Card 4: Hobbies-->
         <div class = "mySlides fade">
             <h2>Hobbies</h2>
-            <p>This section will be about my hobbies.</p>  
+            <p>This section will be about my hobbies.</p>
+            <!--Plans for card: sections about hobbies, lightbox at the bottom?-->
         </div>
 
+        <!--Card 5: Projects-->
         <div class = "mySlides fade">
             <h2>Projects</h2>
             <p>Between assignments for my classes and personal projects I choose to work on in my free time, I have worked on several things I am proud to have created. Here are a few:</p>
-            <h3>My Professional Identity</h3>
-            <p>This project was created for my Backpack to Briefcase professional development seminar during the middle of my first semester sophomore year. It provides a snapshot </p>
-            <h3>My Website</h3>
-            <p>This website was created as a personal project during the summer of 2019, while I was abroad interning at Better Trader. The website is written entirely from scratch, with help from w3schools and StackOverflow, and a lot of time working with a hex color picker and a css gradient maker. It is hosted through GitHub, and you can <span>view the repository,</span> which includes the current website, old versions, and some files that are me just playing around.</p>
-            <p>The current site is the third version I have created. The <span>original version</span> of the site was fairly primitive and not written with best practices in mind, and was not at all mobile responsive. The <span>second version</span> was created to be somewhat similar to the current site, with a background and white cards, but was never quite finished. I intended to add functionality to have one card displayed on the first slide, but never got around to writing the JavaScript. In addition, using an image as the background slowed down the loading of the site.</p>
-            <p>I created the current version of the site shortly after beginning to work on the Professional Identity project mentioned above. The original design for that project was plain white with grey lines dividing sections, but I decided to do something with some color, and I got the idea to do a gradient background with white cards, and I liked the style to much I decided to re-do my website in the same style.</p>
+            <div class = "project"> <!--Project div indents each project and puts space between them-->
+                <h3>My Professional Identity</h3>
+                <p>This project was created for my Backpack to Briefcase professional development seminar during the middle of my first semester sophomore year. It provides a snapshot </p>
+            </div>
+            <div class = "project">
+                <h3>My Website</h3>
+                <p>This website was created as a personal project during the summer of 2019, while I was abroad interning at Better Trader. The website is written entirely from scratch, with help from w3schools and StackOverflow, and a lot of time working with a hex color picker and a css gradient maker. It is hosted through GitHub, and you can <span>view the repository,</span> which includes the current website, old versions, and some files that are me just playing around.</p>
+                <p>The current site is the third version I have created. The <span>original version</span> of the site was fairly primitive and not written with best practices in mind, and was not at all mobile responsive. The <span>second version</span> was created to be somewhat similar to the current site, with a background and white cards, but was never quite finished. I intended to add functionality to have one card displayed on the first slide, but never got around to writing the JavaScript. In addition, using an image as the background slowed down the loading of the site.</p>
+                <p>I created the current version of the site shortly after beginning to work on the Professional Identity project mentioned above. The original design for that project was plain white with grey lines dividing sections, but I decided to do something with some color, and I got the idea to do a gradient background with white cards, and I liked the style to much I decided to re-do my website in the same style.</p>
+            </div>
         </div>
     </div>
     
