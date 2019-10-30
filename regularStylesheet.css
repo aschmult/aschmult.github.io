@@ -187,6 +187,9 @@ h1{
     grid-template-rows: auto auto;
     text-align: justify;
 }
+.sectionSpacer{
+    height: 10px;
+}
 .photo{
     justify-self:center;
 }
@@ -217,6 +220,9 @@ h1{
         grid-template-columns: 250px auto;
         grid-template-rows: max-content;
         text-align: justify;
+    }
+    .sectionSpacer{
+        height: 30px;
     }
     .photo{
         align-self:center;
