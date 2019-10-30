@@ -303,11 +303,11 @@
     <script>
         var audio = document.getElementsByClassName("audio");
 
-        function playAudio(n) {
-            audio[n-1].play();
+        function playAudio(a) {
+            audio[a-1].play();
         }
-        function pauseAudio(n) {
-            audio[n-1].pause();
+        function pauseAudio(a) {
+            audio[a-1].pause();
         }
 
         var slideIndex = 1;
