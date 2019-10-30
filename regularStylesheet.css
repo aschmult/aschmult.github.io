@@ -227,9 +227,6 @@ h1{
     .photo{
         align-self:center;
     }
-    .photo img{
-        width: 250px;
-    }
     .text p, h3{
         margin-top: 0px;
     }
