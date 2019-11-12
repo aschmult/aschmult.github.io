@@ -5,10 +5,10 @@ html, body{
 body{
     font-family: Lato, sans-serif;
     /*background: rgb(108,170,244);
-    background: linear-gradient(135deg, rgba(108,170,244,1) 0%, rgba(176,117,238,1) 85%);
-    background-position: 0 100px;*/
-    background: rgb(66,163,225);
-    background: linear-gradient(156deg, rgba(66,163,225,1) 0%, rgba(167,90,222,1) 47%, rgba(206,97,145,1) 100%);
+    background: linear-gradient(135deg, rgba(108,170,244,1) 0%, rgba(176,117,238,1) 85%);*/
+    background-position: 0 100px;
+    background: rgb(58,123,200);
+    background: linear-gradient(135deg, rgba(58,123,200,1) 16%, rgba(177,69,201,1) 82%);
     margin: 0px;
     padding: 0px;
     position: relative;
