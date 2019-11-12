@@ -4,9 +4,11 @@ html, body{
 }
 body{
     font-family: Lato, sans-serif;
-    background: rgb(108,170,244);
+    /*background: rgb(108,170,244);
     background: linear-gradient(135deg, rgba(108,170,244,1) 0%, rgba(176,117,238,1) 85%);
-    background-position: 0 100px;
+    background-position: 0 100px;*/
+    background: rgb(66,163,225);
+    background: linear-gradient(132deg, rgba(66,163,225,1) 0%, rgba(150,102,220,1) 44%, rgba(230,102,158,1) 100%);
     margin: 0px;
     padding: 0px;
     position: relative;
