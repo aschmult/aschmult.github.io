@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Source+Sans+Pro|Roboto|Fira+Sans|Libre+Franklin|Raleway&display=swap" rel="stylesheet">
+    <title>Anna Schmult</title>
+    <style>
+        /*general stuff*/
+        html, body{
+            overflow-x: hidden;
+        }
+        body{
+            font-family: Raleway, sans-serif;
+            font-weight: 100;
+            margin:0;
+            background-color: #ffb3b3;
+            /*background-color: #80ccff*/ 
+        }
+        p{
+            font-size: 1.1rem;
+        }
+
+        /*h1 for the title (my name)*/
+        h1{
+            font-size: 50px;
+            text-align: center;
+            font-family: 'Alegreya Sans', sans-serif;
+            font-weight: 100;
+            padding: 20px;
+        }
+        @media only screen and (min-width: 800px){
+            h1{
+                position: absolute;
+                text-align: left;
+                font-family: 'Alegreya Sans', sans-serif;
+                font-weight: 100;
+                vertical-align:middle;
+                margin-left: -20px;
+            }
+        }
+
+        /* h2,3,4 to get line spacing in section titles right*/
+        h2{
+            margin-top: 0px; /* to eliminate extra space (it's already padded)*/
+        }
+        h3{
+            margin-top: 0px;
+            margin-bottom: 0px; /* 3&4 for labeling sections*/
+        }
+        h4{
+            margin-top: 0px;
+        }
+
+        /*background image --> just chiling behind everything else*/
+        .background{
+            width: 100vw;
+            height: 70vh;
+            background-image: url("pics/Wood-Background2-Vertical.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100vw;
+            position: absolute;
+            z-index: -1;
+            margin: 0;
+        }
+        @media only screen and (min-width: 800px){
+            .background{
+                width: 100vw;
+                height: 70vh;
+                background-image: url("pics/Wood-Background2.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 100vw;
+                position: absolute;
+                z-index: -1;
+                margin: 0;
+            }
+        }
+
+        /* container for the stuff in the heading*/
+        .header{
+            height: 100px;
+            text-align: center;
+        }
+        @media only screen and (min-width: 800px){
+            .header{
+                height: 150px;
+                text-align: left;
+                position: relative;
+                width: 80vw;
+                margin: auto;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+        }
+
+        /*the box information appears in*/
+        .box{
+            box-sizing:border-box;
+            background-color: white;
+            border-radius: 4px;
+            box-shadow:0 0 15px #8c8c8c;
+            margin: auto;
+            margin-top:0;
+            width: 90vw;
+            margin-bottom: 30px;
+            padding: 5vw;
+        }
+        @media only screen and (min-width: 800px){
+            .box{
+                box-sizing:border-box;
+                background-color: white;
+                border-radius: 4px;
+                box-shadow:0 0 15px #8c8c8c;
+                margin: auto;
+                margin-top:0;
+                width: 80vw;
+                margin-bottom: 40px;
+                padding: 60px;
+            }
+        }
+
+        /*the sections within the box*/
+        .sectionLeft, .sectionRight{
+            display: grid;
+            grid-gap: 20px;
+            grid-template-rows: auto auto;
+            text-align: justify;
+        }
+        @media only screen and (min-width: 800px){
+            .sectionLeft{
+                display: grid;
+                grid-gap: 60px;
+                grid-template-columns: 250px 1px auto;
+                grid-template-rows: max-content;
+                text-align: justify;
+            }
+            .sectionRight{
+                display: grid;
+                grid-gap: 60px;
+                grid-template-columns: auto 1px 250px;
+                grid-template-rows: max-content;
+                text-align: justify;
+            }
+        }
+
+        /*the photo*/
+        .photo{
+            justify-self: center;
+        }
+        @media only screen and (min-width: 800px){
+            .photo{
+                align-self: center;
+            }
+        }
+
+        /*the line dividing the photo and text*/
+        .line{
+            display: none;
+        }
+        @media only screen and (min-width: 800px){
+            .line{
+                display: initial;
+                border-left: 1px solid grey;
+            }
+        }
+
+        /*the text*/
+        .text, .textAbout{
+            position: relative;
+        }
+        .text a{
+            text-align: center;
+            color: white;
+            background-color: #a6a6a6;
+            text-decoration: none;
+            width: 275px;
+            padding: 10px;
+            border-radius: 4px;
+            position: absolute;
+            left:0;
+            right:0;
+            margin-left:auto;
+            margin-right:auto;
+            
+        }
+        @media only screen and (min-width: 800px){
+            .text, .textAbout{
+                position: relative;
+            }
+            .text a{
+                display: inline-block;
+                display: -moz-inline-box;
+                zoom: 1;
+                width: 275px;
+                text-align: center;
+                color: white;
+                background-color: #a6a6a6;
+                text-decoration: none;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-radius: 4px;
+                position: absolute;
+                left:0;
+                right:0;
+                margin-left:auto;
+                margin-right:auto;
+            }
+        }
+        @media only screen and (min-width: 800px){ /*for the buttons in the about section text*/
+            .aboutMenu{
+                display:initial;
+                width: 305px;
+                height: 40px;
+                position: absolute;
+                left:0;
+                right:0;
+                margin-left:auto;
+                margin-right:auto;
+                vertical-align:middle;
+            }
+            .aboutMenu a{
+                display: inline-block;
+                display: -moz-inline-box;
+                zoom: 1;
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+        }
+
+        /*to divide sections within a box*/
+        .horizontalLine{
+            height: 1px;
+            border-top: 1px solid grey;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        @media only screen and (min-width: 800px){
+            .horizontalLine{
+                height: 60px;
+                border: none;
+                margin: 0;
+            }
+        }
+
+        /*the footer part*/
+        .footer{
+            font-size: 16px;
+            color: #666666;
+            width: 90vw;
+            margin: auto;
+            margin-bottom: 16px;
+        }
+        .footer a{
+            color: #666666;
+            text-decoration: none;
+        }
+        .navigation{
+            text-align: center;
+        }
+        .copyright{
+            text-align: center;
+        }
+        @media only screen and (min-width: 800px){
+            .footer{
+                width: 80vw;
+            }
+            .footer a:hover{
+                text-decoration: underline;
+            }
+            .navigation{
+                float: left;
+            }
+            .copyright{
+                text-align: right;
+                float: right;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!--Header-->
+    <div class = "background"></div>
+    <div class = "header">
+        <h1>ANNA SCHMULT</h1>
+    </div>
+
+    <!--About me section (home page)-->
+    <div class = "box about" id = "about"> <!--The box information goes in-->
+        <div class = "sectionLeft"> <!--The grid layout-->
+            <div class = "photo"> <!--Photo/image for the text-->
+                <img src = "pics/Personal-Photo.png" alt = "A photo of Anna Schmult holding a pineapple pinata." style = "width:250px;">
+            </div>
+            <div class = "line"></div> <!--Divider line between the image and the text-->
+            <div class = "textAbout"> <!--The copy-->
+                <p style = "margin-top: 0;">Hi! I'm Anna Schmult!</p>
+                <p>I am a student at the Villanova School of Business, class of 2022, where my interests include finance, math, and computer science. Outside of class, I enjoy playing ice hockey, and I am a member of the Executive Board of Villanova University Tech Crew.</p>
+                <p>Please take a look at <span><a href = "#education" style = "color:black;">the rest of my site</a></span> to learn more about me, download my resume, connect with me on LinkedIn, or reach out by email.</p>
+                <div class = "aboutMenu">
+                    <a href="https://www.linkedin.com/in/anna-schmult-876971184/" target="_blank"><img src="pics/LinkedIn-Logo2.png"style="height:40px;"></a>
+                    <a href="mailto:aschmult@villanova.edu" target="_top"><img src="pics/Email-Logo2.png" style="height:40px;"></a>
+                    <a href="pics/AnnaSchmultResume.pdf" target="_blank" style="color:white; text-decoration:none; position: absolute; bottom: 0px; background-color:#a6a6a6; border-radius: 4px; padding: 10px;">Download Resume</a>
+                </div>
+            </div> <!--End copy-->
+        </div> <!--End section-->
+    </div> <!--End box-->
+
+    <!--Education section-->
+    <div class = "box education" id = "education"> <!--The box information goes in-->
+        <h2>Education</h2>
+        <div class = "sectionLeft"> <!--The grid layout-->
+            <div class = "photo"> <!--Photo/image for the text-->
+                <img src = "pics/Villanova-Seal.png" alt = "The seal of Villanova University." style = "width:250px;">
+            </div>
+            <div class = "line"></div> <!--Divider line between the image and the text-->
+            <div class = "text"> <!--The copy-->
+                <h3>Villanova University</h3>
+                <h4>Villanova, PA</h4>
+                <p>I am currently a student at the Villanova School of Business, where I will graduate in 2022. Although I have yet to delare a major, I am particularly interested in finance, data analytics, and accounting. In addition, I am considering a second major or a minor in math, statistics, or computer science.</p>
+                <p>I hope to be able to combine my passion for business with my love for math and computer science, such as working in applied data science or quantitative finance.</p>
+                <p>Outside of classes, I enjoy playing and watching ice hockey and spending time with my team, as well as attending the events campus life has to offer. I dedicate a lot of my free time to Tech Crew, both as a job and a hobby.</p>
+                <a href="https://www1.villanova.edu/university/business.html" target="_blank">About Villanova School of Business</a>
+                <br><br>
+            </div> <!--End copy-->
+        </div> <!--End section-->
+        <div class = "horizontalLine"></div>
+        <div class = "sectionRight"> <!--The grid layout-->
+            <div class = "text"> <!--The copy-->
+                <h3>Princeton High School</h3>
+                <h4>Princeton, NJ</h4>
+                <p>I attended Princeton High School from 2014-2018. During my time at PHS, I discovered my love for science, especially chemistry and physics. I also discovered that math could be fun, and I enjoyed calculus and statistics.</p>
+                <p>While at PHS, I was active in the school's choirs, including a tour to Southern Spain in February of 2017. I also was a member of the PHS Girl's Ice Hockey Team for three seasons, which I deeply enjoyed. In both organizations, I took an active role fundraising and working to improve my leadership skills. I credit the PHS Hockey Program with teaching me time management and personal responsibility.</p>
+                <a href="https://www.princetonk12.org/princeton-high-school" target="_blank">About Princeton High School</a>
+                <br><br>
+            </div> <!--End copy-->
+            <div class = "line"></div> <!--Divider line between the image and the text-->
+            <div class = "photo"> <!--Photo/image for the text-->
+                <img src = "pics/PHS-Logo.png" alt = "The logo of Princeton High School, featuring a large letter 'P' and a tiger in blue and black." style = "width:250px;">
+            </div>
+        </div> <!--End section-->
+    </div> <!--End box-->
+
+    <!--Expereince section-->
+    <div class = "box experience" id = "experience"> <!--The box information goes in-->
+        <h2>Experience</h2>
+        <div class = "sectionLeft"> <!--The grid layout-->
+            <div class = "photo"> <!--Photo/image for the text-->
+                <img src = "pics/VUTC-Logo.png" alt = "The logo of Villanova University Tech Crew, the letters V U T C with the U styled as a pair of headphones." style = "width:250px;">
+            </div>
+            <div class = "line"></div> <!--Divider line between the image and the text-->
+            <div class = "text"> <!--The copy-->
+                <h3>Villanova University Tech Crew</h3>
+                <p>Tech Crew is Villanova's student run event production business. We provide audio, lighting, and video support for events around campus, from guest speakers to large-scale concerts. In 2018, we had reveune of over $60,000, and worked 153 events.</p>
+                <p>I joined Tech Crew about a month after starting school at Villanova. During my first semester, I worked as an Event Staff and a Senior Staff member, and I took my Head Technician test in December. As a Head Technician, my responsibilities are to be responsibile for client events. This includes managing a group of 3-8 staff, coordinating with clients, and troubleshooting technical issues. </p>
+                <p>At the start of 2019, I joined the Executive Board of Tech Crew as the Events Manager. As Events Manager, I take client specifications for events, and develop a plan for equipment and staffing. For large scale events, I attend production meetings and coordinate equipment rentals. Additionally, as problems with staffing or equipment arise, I work with other Executive Board members to find solutions.</p>
+                <a href="https://www.vutc.com/dashboard.php" target="_blank">About Tech Crew</a>
+                <br><br>
+            </div> <!--End copy-->
+        </div> <!--End section-->
+        <div class = "horizontalLine"></div>
+        <div class = "sectionRight"> <!--The grid layout-->
+            <div class = "text"> <!--The copy-->
+                <h3>BetterTrader</h3>
+                <p>During the summer of 2019, I worked at BetterTrader as a Research and Marketing Intern. When I started at BetterTrader, I noticed that blog content and articles needed improving on, both content-wise and gramatically. Additionally, social media was being underutilized.</p>
+                <p>At BetterTrader, I started three projects. First, I began a process of editing grammar and content of each blog post and article. Next, I edited each blog post and article to improve search engine optimization, by refining URLs, snippets, and SEO titles. Finally, I started posting short blog summaries three time a week on LinkedIn, Twitter, and Facebook.</p>
+                <p>BetterTrader is located in the High Tech Village on the campus of Hebrew University in Jerusalem, Israel. I spent June and July in Israel, on an organized internship program. The opportunity to work and live outside of the US and learn how business is contucted internationally was invaluable to me.</p>
+                <a href="https://bettertrader.co/" target="_blank">About BetterTrader</a>
+                <br><br>
+            </div> <!--End copy-->
+            <div class = "line"></div> <!--Divider line between the image and the text-->
+            <div class = "photo"> <!--Photo/image for the text-->
+                <img src = "pics/BetterTrader-Logo.png" alt = "The logo of BetterTrader." style = "width:250px;">
+            </div>
+        </div> <!--End section-->
+    </div> <!--End box-->
+
+    <!--Hobbies section-->
+    <div class = "box hobbies" id = "hobbies"> <!--The box information goes in-->
+        <h2>My Hobbies</h2>
+        <div class = "sectionLeft"> <!--The grid layout-->
+            <div class = "photo"> <!--Photo/image for the text-->
+                <img src = "pics/Personal-Photo.png" alt = "A photo of Anna Schmult holding a pineapple pinata." style = "width:250px;">
+            </div>
+            <div class = "line"></div> <!--Divider line between the image and the text-->
+            <div class = "text"> <!--The copy-->
+                <p>This box will be about my hobbies.</p>
+            </div> <!--End copy-->
+        </div> <!--End section-->
+    </div> <!--End box-->
+
+    <!--Footer-->
+    <div class = "footer">
+        <div class = "navigation">
+            <span><a href = "#about">Home</a></span> &emsp; <span><a href = "mailto:aschmult@villanova.edu" target="_top">Contact</a></span> &emsp; <span><a href = "pics/AnnaSchmultResume.pdf" target="_blank">Resume</a></span>
+        </div>
+        <div class = "copyright">
+            <span style = "font-style: italic; font-size: 14px;">© 2019 Anna Schmult. All rights reserved.</span>
+        </div>
+        <div style = "clear:both;"></div>
+    </div>
+</body>
+</html>
+
+<!--
+    To-do list:
+     - Responsive photo layout (photo above text for all sections on mobile)
+     - Add a navigation menu
+     - Create cycling tabs
+     - Get photos for hobbies lightbox
+     - Create hobbies lightbox
+-->
