@@ -162,7 +162,8 @@ h1{
 }
 
 /*Slides (cards)*/
-.slideshow-container {
+/*Box is when there is just a single card (created for the 404 page*/
+.slideshow-container, .box {
     position: relative;
     background: white;
     margin: 20px 20px 40px 20px;
@@ -224,7 +225,7 @@ h1{
     margin-bottom:0px;
 }
 @media only screen and (min-width: 800px){
-    .slideshow-container {
+    .slideshow-container, .box {
         margin: 2vw 6vw 6vw 6vw;
         border-radius: 4px;
     }
