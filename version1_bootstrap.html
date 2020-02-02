@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <title>Anna Schmult</title>
+    <style>
+        html, body{
+            overflow-x: hidden;
+        }
+        body{
+            background-color: #b3e0ff;
+            font-family: Lato, sans-serif;
+        }
+        .gradient{
+            background-image: linear-gradient(#006bb3,#b3e0ff);
+            position: absolute;
+            z-index: -1;
+            left:0;
+            right:0;
+            top:0;
+            height:160px;
+        }
+        .header{
+            position: relative;
+            right: 0px;
+            left: 0px;
+            top: 0px;
+            padding-bottom:20px;
+            height: 100px;
+        }
+        @media only screen and (min-width: 800px){
+            .header{
+                height: 160px;
+            }
+        }
+        @media only screen and (max-width: 799.9px){
+            .header a{
+                visibility: hidden;
+            }
+        }
+        .box{
+            background-color: #e6f5ff;
+            border-radius: 6px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 1px;
+            padding-bottom: 1px;
+            margin-right: 10px;
+            margin-left: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            box-shadow:0 0 15px #8cb3d9;
+        }
+        @media only screen and (min-width: 800px){
+            .box{
+                margin-top: 40px;
+                margin-bottom: 40px;
+                margin-right: 40px;
+                margin-left: 40px;
+            }
+        }
+        .menu{
+            background-color: #e6f5ff;
+            border-radius: 6px;
+            width: 610px;
+            position:absolute;
+            bottom:0px;
+            left:0;
+            right:0;
+            margin-left:auto;
+            margin-right:auto;
+            box-shadow:0 0 15px #8cb3d9;
+        }
+        .menu a{
+            display: inline-block;
+            display: -moz-inline-box;
+            width: 150px;
+            text-align: center;
+            color: black;
+            text-decoration: none;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 6px;
+        }
+        .menu a:hover{
+            background-color:#ccebff;
+            color: black;
+        }
+        @media only screen and (max-width: 799.9px){
+            .menu{
+                visibility: hidden;
+            }
+            .menu a{
+                visibility: hidden;
+            }
+        }
+        .section{
+            overflow: auto;
+        }
+        .section a{
+            display: inline-block;
+            display: -moz-inline-box;
+            zoom: 1;
+            width: 275px;
+            text-align: center;
+            color: black;
+            background-color: #b3e0ff;
+            text-decoration: none;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 6px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        .section a:hover{
+            background-color: #99d6ff;
+            color: black;
+        }
+        h1{
+            padding-left:40px;
+            padding-top:0px;
+            font-size:50px;
+            letter-spacing:.15em;
+            color: #0056A3;
+            text-shadow:0 0 5px white;
+        }
+        h3, h4{
+            margin: 0px 0px 0px 0px;
+        }
+        .copyright{
+            text-align:center;
+            font-style:italic;
+            font-size:10px;
+            color:grey;
+            margin-bottom:12px;
+        }
+    </style>
+</head>
+<body>
+    <div class=gradient>
+    </div>
+    <div class=header>
+        <h1>A<span style="font-size:40px;">NNA</span> S<span style="font-size:40px;">CHMULT</span></h1>
+        <div class=contacts>
+            <a href="https://www.linkedin.com/in/anna-schmult-876971184/" target="_blank"><img src="pics/LinkedIn-Logo.png" style="width:40px; position: absolute; top: 10px; right: 210px;"></a> <!-- LinkedIn image is #0056A3 -->
+            <a href="mailto:aschmult@villanova.edu" target="_top"><img src="pics/Email-Logo.png" style="width:43px; position: absolute; top: 9px; right: 265px;"></a>
+            <a href="pics/AnnaSchmultResume.pdf" target="_blank" style="width:150px; position: absolute; top: 10px; right: 45px; background-color:#0056A3; color:white; text-align:center; text-decoration:none; padding-top:10px; padding-bottom:10px; border-radius:6px;">Download Resume</a>
+        </div>
+        <div class=menu>
+            <a href="#about">About Me</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#hobbies">My Hobbies</a>
+        </div>
+    </div>
+    <div class=box>
+        <h2><a id="about">About Me</a></h2>
+        <p>I am a student at the Villanova School of Business, class of 2022, where my interests include finance, math, and computer science. Outside of class, I enjoy playing ice hockey, and I am a member of the Executive Board of Villanova University Tech Crew. Please take a look at the rest of my site to learn more about me, download my resume, connect with me on LinkedIn, or reach out by email.</p>
+    </div>
+    <div class=box>
+        <h2><a id="education">Education</a></h2>
+        <div class=section>
+            <img src="pics/Villanova-Seal.png" alt="The Villanova seal" style="width:250px; height:250px; float:left; margin-right: 20px; margin-bottom: 10px;">
+            <h3>Villanova University</h3>
+            <h4>Villanova, PA</h4>
+            <p>I am currently a student at the Villanova School of Business, where I will graduate in 2022. Although I have yet to delare a major, I am particularly interested in finance, data analytics, and accounting. In addition, I am considering a second major or a minor in math, statistics, or computer science.</p>
+            <p>I hope to be able to combine my passion for business with my love for math and computer science, such as working in applied data science or quantitative finance.</p>
+            <p>Outside of classes, I enjoy playing and watching ice hockey and spending time with my team, as well as attending the events campus life has to offer. I dedicate a lot of my free time to Tech Crew, both as a job and a hobby.</p>
+            <a href="https://www1.villanova.edu/university/business.html" target="_blank">About Villanova School of Business</a>
+        </div>
+        <br>
+        <div class=section>
+            <img src="pics/PHS-Logo.png" alt="The Princeton High School logo" style="width:300px; float:right; margin-bottom:10px; margin-left:20px;">
+            <h3>Princeton High School</h3>
+            <h4>Princeton, NJ</h4>
+            <p>I attended Princeton High School from 2014-2018. During my time at PHS, I discovered my love for science, especially chemistry and physics. I also discovered that math could be fun, and I enjoyed calculus and statistics.</p>
+            <p>While at PHS, I was active in the school's choirs, including a tour to Southern Spain in February of 2017. I also was a member of the PHS Girl's Ice Hockey Team for three seasons, which I deeply enjoyed. In both organizations, I took an active role fundraising and working to improve my leadership skills. I credit the PHS Hockey Program with teaching me time management and personal responsibility.</p>
+            <a href="https://www.princetonk12.org/princeton-high-school" target="_blank">About Princeton High School</a>
+        </div>
+    </div>
+    <div class=box>
+        <h2><a id="experience">Experience</a></h2>
+        <div class=section>
+            <img src="pics/BetterTrader-Logo.png" alt="The Better Trader logo" style="width:200px; float:left; margin-right:20px; margin-bottom: 10px">
+            <h3>BetterTrader</h3>
+            <p>During the summer of 2019, I worked at BetterTrader as a Research and Marketing Intern. When I started at BetterTrader, I noticed that blog content and articles needed improving on, both content-wise and gramatically. Additionally, social media was being underutilized.</p>
+            <p>At BetterTrader, I started three projects. First, I began a process of editing grammar and content of each blog post and article. Next, I edited each blog post and article to improve search engine optimization, by refining URLs, snippets, and SEO titles. Finally, I started posting short blog summaries three time a week on LinkedIn, Twitter, and Facebook.</p>
+            <p>BetterTrader is located in the High Tech Village on the campus of Hebrew University in Jerusalem, Israel. I spent June and July in Israel, on a program called jInternship. jInternship is a program for Jewish students to work at internships in Israel, as well as attend classes relating to Judaism, including Hebrew lessons. </p>
+            <a href="https://bettertrader.co/" target="_blank" style="margin-right:10px;">About BetterTrader</a>
+            <a href="https://jinternship.com/" target="_blank" style="margin-left:10px;">About jInternship</a>
+        </div>
+        <br>
+        <div class=section>
+            <img src="pics/VUTC-Logo.png" alt="The logo for Villanova University Tech Crew" style="width:250px; float:right; margin-right:20px; margin-left:20px;">
+            <h3>Villanova University Tech Crew</h3>
+            <p>Tech Crew is Villanova's student run event production business. We provide audio, lighting, and video support for events around campus, from guest speakers to large-scale concerts. In 2018, we had reveune of over $60,000, and worked 153 events.</p>
+            <p>I joined Tech Crew about a month after starting school at Villanova. During my first semester, I worked as an Event Staff and a Senior Staff member, and I took my Head Technician test in December. As a Head Technician, my responsibilities are to be responsibile for client events. This includes managing a group of 3-8 staff, coordinating with clients, and troubleshooting technical issues. </p>
+            <p>At the start of 2019, I joined the Executive Board of Tech Crew as the Events Manager. As Events Manager, I take client specifications for events, and develop a plan for equipment and staffing. For large scale events, I attend production meetings and coordinate equipment rentals. Additionally, as problems with staffing or equipment arise, I work with other Executive Board members to find solutions.</p>
+            <a href="https://www.vutc.com/dashboard.php" target="_blank">About Tech Crew</a>
+        </div>
+    </div>
+    <div class=box>
+        <h2><a id="hobbies">My Hobbies</a></h2>
+        <p>The hobby I most like talking about is ice hockey. I began playing quite suddenly in 2015, after seven years of figure skating. Since then, I have played four seasons of ice hockey. Playing hockey has given me wonderful friends and a great time-waster during Stanley Cup Playoffs season. I am a fan of the Detroit Red Wings, and my favorite players are Dylan Larkin and Niklas Kronwall. </p>
+        <p>I was an active Girl Scout from 2006 to 2018, and currently hold a Lifetime Membership. I enjoyed camping with my troop, doing community service, and mentoring younger girls. The Girl Scouts gave me lifelong friends, and several wonderful summers at camp. I was a camper at Camp Mosey Wood from 2012-2015, and in 2016 I attended their CIT programs. In 2017 and 2018, I worked at Camp Laughing Waters, where I made lifelong friends and learned how to lead a small team of peers.</p>
+        <p>Since learning Python my freshman year of high school, I've had an interest in coding, which was furthered when I met computer science majors and joined Web Team through Tech Crew. In fact, this website was written as a hobby, with plenty of help from Google, Stack Overflow, and a hex color picker. It is written mostly in HTML, with CSS styling.</p>
+    </div>
+    <div class=copyright>
+        © 2019 Anna Schmult. All rights reserved.
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
