@@ -170,6 +170,10 @@ h1{
     box-shadow: 0 0 20px #737373;
     border-radius: 3px;
 }
+.box {
+    padding: 16px 16px 1px 16px;
+    text-align: justify;
+}
 .mySlides {
     display: none;
     padding: 16px 16px 1px 16px;
@@ -232,6 +236,9 @@ h1{
     .mySlides {
         display: none;
         text-align: justify;
+        padding: 4vw;
+    }
+    .box {
         padding: 4vw;
     }
     .section{
