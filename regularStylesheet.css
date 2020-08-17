@@ -162,7 +162,7 @@ h1{
 }
 
 /*Slides (cards)*/
-/*Box is when there is just a single card (created for the 404 page*/
+/*Box is when there is just a single card (created for the 404 page)*/
 .slideshow-container, .box {
     position: relative;
     background: white;
@@ -230,6 +230,11 @@ h1{
 }
 .project a{
     color: black;
+}
+a:link not a.aboutButton, a:visited not a.aboutButton{
+    color: #404040;
+    text-decoration: none;
+    border-bottom: 1px solid #404040;
 }
 @media only screen and (min-width: 800px){
     .slideshow-container, .box {
