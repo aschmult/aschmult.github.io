@@ -30,8 +30,8 @@
         <a class = "menu" onclick = "currentSlide(1), closeNav()">About Me</a>
         <a class = "menu" onclick = "currentSlide(2), closeNav()">Education</a>
         <a class = "menu" onclick = "currentSlide(3), closeNav()">Experience</a>
-        <a class = "menu" onclick = "currentSlide(4), closeNav()">My Hobbies</a>
-        <a class = "menu" onclick = "currentSlide(5), closeNav()">Projects</a>
+        <a class = "menu" onclick = "currentSlide(4), closeNav()">Projects</a>
+        <a class = "menu" onclick = "currentSlide(5), closeNav()">My Hobbies</a>
         <a href = "pics/AnnaSchmultResume.pdf" target="_blank">Resume</a>
         <a href = "https://www.linkedin.com/in/anna-schmult/" target="_blank"><img src = "pics/LinkedIn-Logo-Transparent2.png"></a>
         <a href = "mailto:aschmult@villanova.edu" target="_top"><img src = "pics/Email-Logo-Transparent2.png" ></a>
@@ -41,8 +41,8 @@
         <span class = "menu" onclick = "currentSlide(1)">About Me</span>
         <span class = "menu" onclick = "currentSlide(2)">Education</span>
         <span class = "menu" onclick = "currentSlide(3)">Experience</span>
-        <span class = "menu" onclick = "currentSlide(4)">My Hobbies</span>
-        <span class = "menu" onclick = "currentSlide(5)">Projects</span>
+        <span class = "menu" onclick = "currentSlide(4)">Projects</span>
+        <span class = "menu" onclick = "currentSlide(5)">My Hobbies</span>
     </div>
     
     <!--Page content-->
@@ -197,45 +197,7 @@
             </div>
         </div>
 
-        <!--Card 4: Hobbies-->
-        <div class = "mySlides fade">
-            <h2>Hobbies</h2>
-            <div class = "section">
-                <div class = "photo">
-                    <img src = "pics/19-20-Team-Photo.png" alt = "The 2019-2020 Villanova Women's Ice Hockey Team, gathered on ice with their coaches." style = "width: 250px;" />
-                </div>
-                <div class = "text">
-                    <h3>Ice Hockey</h3>
-                    <p>
-                        I started playing ice hockey during my sophomore year of high school, in what would be classified as an 
-                        impulsive decision. Although I do not generally advocate for impulsive decisions, this was a good one. 
-                        In high school, my practices required waking up at 4:30am, which forced me to improve my time management 
-                        and discipline.
-                    </p>
-                    <p>
-                        When I have free time, I enjoy watching NHL hockey. I support the Detroit Red Wings, along with other 
-                        Detroit sports teams, and some of my favorite players are Dylan Larkin and Niklas Kronwall, who has recently 
-                        retired from play. I also enjoy attending games, including other local college teams.
-                    </p>
-                </div>
-            </div>
-            <div class = "section">
-                <div class = "photo">
-                    <img src = "pics/VUTC-Mixing.jpg" alt = "Anna Schmult mixing an a cappella concert. She stands at the back of a room full of people, watching the singers on stage." style = "width: 250px;" />
-                </div>
-                <div class = "text">
-                    <h3>Live Sound and Lighting</h3>
-                    <p>
-                        When I first joined VUTC, it was as a job and a way to make friends. Since then, I have gotten genuinely 
-                        interested in live sound and lighting. I enjoy reading about and looking at various sound and lighting 
-                        setups, both online and while out. It is always interesting to enter a venue, and immediately start looking 
-                        at the PA system.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <!--Card 5: Projects-->
+        <!--Card 4: Projects-->
         <div class = "mySlides fade">
             <h2>Projects</h2>
             <p>
@@ -331,6 +293,45 @@
                 <br><br>
             </div>
         </div>
+
+        <!--Card 5: Hobbies-->
+        <div class = "mySlides fade">
+            <h2>Hobbies</h2>
+            <div class = "section">
+                <div class = "photo">
+                    <img src = "pics/19-20-Team-Photo.png" alt = "The 2019-2020 Villanova Women's Ice Hockey Team, gathered on ice with their coaches." style = "width: 250px;" />
+                </div>
+                <div class = "text">
+                    <h3>Ice Hockey</h3>
+                    <p>
+                        I started playing ice hockey during my sophomore year of high school, in what would be classified as an 
+                        impulsive decision. Although I do not generally advocate for impulsive decisions, this was a good one. 
+                        In high school, my practices required waking up at 4:30am, which forced me to improve my time management 
+                        and discipline.
+                    </p>
+                    <p>
+                        When I have free time, I enjoy watching NHL hockey. I support the Detroit Red Wings, along with other 
+                        Detroit sports teams, and some of my favorite players are Dylan Larkin and Niklas Kronwall, who has recently 
+                        retired from play. I also enjoy attending games, including other local college teams.
+                    </p>
+                </div>
+            </div>
+            <div class = "section">
+                <div class = "photo">
+                    <img src = "pics/VUTC-Mixing.jpg" alt = "Anna Schmult mixing an a cappella concert. She stands at the back of a room full of people, watching the singers on stage." style = "width: 250px;" />
+                </div>
+                <div class = "text">
+                    <h3>Live Sound and Lighting</h3>
+                    <p>
+                        When I first joined VUTC, it was as a job and a way to make friends. Since then, I have gotten genuinely 
+                        interested in live sound and lighting. I enjoy reading about and looking at various sound and lighting 
+                        setups, both online and while out. It is always interesting to enter a venue, and immediately start looking 
+                        at the PA system.
+                    </p>
+                </div>
+            </div>
+        </div>
+
     </div>
     
     <script>
@@ -352,22 +353,22 @@
             if (n > slides.length) {
                 slideIndex = 1
             }
-                if (n < 1) {
-                    slideIndex = slides.length
-                }
-                for (i=0; i < slides.length; i++){
-                    slides[i].style.display = "none";
-                }
-                for (i = 0; i < menu.length; i++) {
-                    menu[i].className = menu[i].className.replace(" active", "");
-                }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++){
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < menu.length; i++) {
+                menu[i].className = menu[i].className.replace(" active", "");
+            }
             slides[slideIndex-1].style.display = "block";
             menu[slideIndex-1].className += " active";
         }
     </script>
 
     <div class="copyright">
-        © 2019-2020 Anna Schmult. All rights reserved.
+        © 2019-2021 Anna Schmult. All rights reserved.
     </div>
 </body>
     
