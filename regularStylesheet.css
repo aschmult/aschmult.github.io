@@ -266,7 +266,7 @@ a:link not a.aboutButton, a:visited not a.aboutButton{
     }
     .skillSet {
         display: grid;
-        grid-gap: 3vw;
+        grid-gap: 1vw;
         grid-template-columns: auto;
         grid-template-rows: max-content;
     }
