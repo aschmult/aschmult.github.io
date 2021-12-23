@@ -264,11 +264,11 @@ a:link not a.aboutButton, a:visited not a.aboutButton{
     .text p, h3{
         margin-top: 0px;
     }
-    .project{
-        margin: 2vw;
-    }
-    .project h3{
-        margin-bottom:5px;
+    .skillSet {
+        display: grid;
+        grid-gap: 3vw;
+        grid-template-columns: auto;
+        grid-template-rows: max-content;
     }
     @-webkit-keyframes fade {
         from {opacity: .4} 
